@@ -1,0 +1,28 @@
+table Feriado
+	lineageTag: 694c7b4b-1230-5d07-a985-179a954325fc
+	isHidden
+
+	column Data
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		lineageTag: a570241c-3a87-562f-a7e7-1ceb4b739a3e
+		summarizeBy: none
+		sourceColumn: Data
+		annotation UnderlyingDateTimeDataType = Date
+
+
+	column Nome
+		dataType: string
+		lineageTag: 35b231a9-370f-59af-8f13-b307156828e8
+		summarizeBy: none
+		sourceColumn: Nome
+
+	partition Feriado = m
+		mode: import
+		source =
+				let
+				    Origem = if Fonte = "CSV" then LerCsv("feriados.csv") else error "A fonte Online entra na fase 2, com o tenant da Tucci.",
+				    Tipado = Table.TransformColumnTypes(Origem, {{"Data", type date}, {"Nome", type text}}, "en-US")
+				in
+				    Tipado
+

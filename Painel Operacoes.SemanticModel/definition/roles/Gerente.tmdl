@@ -1,0 +1,5 @@
+role Gerente
+	modelPermission: read
+
+	tablePermission CentroCusto = CentroCusto[Codigo] IN CALCULATETABLE ( VALUES ( MapaGerente[CentroCusto] ), MapaGerente[Email] = USERPRINCIPALNAME () )
+

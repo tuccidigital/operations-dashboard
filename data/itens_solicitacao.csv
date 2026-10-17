@@ -1,0 +1,1160 @@
+Id;SolicitacaoId;ProdutoCodigo;Descricao;Quantidade;PrecoUnitario;Subtotal
+1;1;SV-003;Frete dedicado regional;2;1168.99;2337.98
+2;1;SV-003;Frete dedicado regional;2;1425.67;2851.34
+3;2;EM-003;Etiqueta térmica 100x50 (rolo 1000);10;47.68;476.80
+4;4;EP-002;Protetor auricular tipo plug (caixa 100);16;102.18;1634.88
+5;5;SV-004;Limpeza industrial mensal;1;3831.99;3831.99
+6;5;SV-004;Limpeza industrial mensal;1;4137.61;4137.61
+7;5;SV-004;Limpeza industrial mensal;1;4564.87;4564.87
+8;5;SV-004;Limpeza industrial mensal;2;4440.42;8880.84
+9;6;PC-004;Bico de injeção (unidade);1;822.59;822.59
+10;6;PC-004;Bico de injeção (unidade);2;967.79;1935.58
+11;6;PC-004;Bico de injeção (unidade);16;993.97;15903.52
+12;7;MP-004;Masterbatch branco (saco 25 kg);1;710.94;710.94
+13;7;MP-004;Masterbatch branco (saco 25 kg);24;703.44;16882.56
+14;7;MP-005;Masterbatch preto (saco 25 kg);24;422.80;10147.20
+15;7;MP-005;Masterbatch preto (saco 25 kg);1;363.12;363.12
+16;8;TI-002;Coletor de dados com leitor;2;3312.15;6624.30
+17;8;TI-002;Coletor de dados com leitor;2;3390.42;6780.84
+18;8;TI-002;Coletor de dados com leitor;1;3496.13;3496.13
+19;9;SV-002;Manutenção corretiva de molde (hora);1;217.34;217.34
+20;9;SV-002;Manutenção corretiva de molde (hora);6;220.44;1322.64
+21;9;SV-002;Manutenção corretiva de molde (hora);10;194.83;1948.30
+22;9;SV-002;Manutenção corretiva de molde (hora);1;219.38;219.38
+23;10;SV-001;Calibração de paquímetro;1;78.14;78.14
+24;10;SV-001;Calibração de paquímetro;4;78.73;314.92
+25;10;SV-001;Calibração de paquímetro;6;91.16;546.96
+26;10;SV-001;Calibração de paquímetro;4;96.08;384.32
+27;11;PC-003;Válvula direcional hidráulica;1;1811.19;1811.19
+28;12;PC-003;Válvula direcional hidráulica;1;1757.21;1757.21
+29;12;PC-003;Válvula direcional hidráulica;1;1898.78;1898.78
+30;12;PC-003;Válvula direcional hidráulica;2;1904.78;3809.56
+31;12;PC-003;Válvula direcional hidráulica;1;1833.93;1833.93
+32;13;MP-005;Masterbatch preto (saco 25 kg);24;357.48;8579.52
+33;14;TI-002;Coletor de dados com leitor;1;3058.15;3058.15
+34;14;TI-003;Licença anual de antivírus (usuário);2;89.58;179.16
+35;14;TI-003;Licença anual de antivírus (usuário);24;103.82;2491.68
+36;14;TI-002;Coletor de dados com leitor;1;3125.83;3125.83
+37;15;PC-005;Óleo hidráulico ISO 68 (balde 20 L);1;467.83;467.83
+38;15;PC-005;Óleo hidráulico ISO 68 (balde 20 L);4;470.44;1881.76
+39;15;PC-005;Óleo hidráulico ISO 68 (balde 20 L);6;518.04;3108.24
+40;15;PC-005;Óleo hidráulico ISO 68 (balde 20 L);4;454.05;1816.20
+41;16;TI-002;Coletor de dados com leitor;1;2973.43;2973.43
+42;16;TI-002;Coletor de dados com leitor;2;3516.26;7032.52
+43;16;TI-002;Coletor de dados com leitor;1;3535.18;3535.18
+44;16;TI-002;Coletor de dados com leitor;1;3927.51;3927.51
+45;18;TI-001;Notebook corporativo;2;6758.67;13517.34
+46;19;PC-005;Óleo hidráulico ISO 68 (balde 20 L);4;443.32;1773.28
+47;19;PC-005;Óleo hidráulico ISO 68 (balde 20 L);10;515.96;5159.60
+48;19;PC-005;Óleo hidráulico ISO 68 (balde 20 L);4;470.16;1880.64
+49;20;SV-001;Calibração de paquímetro;16;78.51;1256.16
+50;20;SV-001;Calibração de paquímetro;2;72.97;145.94
+51;21;PC-003;Válvula direcional hidráulica;2;2113.48;4226.96
+52;21;PC-003;Válvula direcional hidráulica;1;2163.49;2163.49
+53;21;PC-003;Válvula direcional hidráulica;1;1644.94;1644.94
+54;21;PC-003;Válvula direcional hidráulica;2;1883.88;3767.76
+55;22;SV-004;Limpeza industrial mensal;2;4189.81;8379.62
+56;22;SV-004;Limpeza industrial mensal;2;3896.52;7793.04
+57;22;SV-004;Limpeza industrial mensal;1;4417.78;4417.78
+58;25;EM-004;Palete PBR;4;71.60;286.40
+59;25;EM-001;Caixa de papelão 40x30x30 (pacote 50);24;192.85;4628.40
+60;25;EM-004;Palete PBR;2;59.77;119.54
+61;25;EM-001;Caixa de papelão 40x30x30 (pacote 50);1;213.57;213.57
+62;27;EP-001;Luva de vaqueta (par);24;19.19;460.56
+63;28;MP-001;Polipropileno homopolímero (saco 25 kg);2;326.45;652.90
+64;28;MP-001;Polipropileno homopolímero (saco 25 kg);1;261.45;261.45
+65;28;MP-001;Polipropileno homopolímero (saco 25 kg);2;329.12;658.24
+66;29;MP-005;Masterbatch preto (saco 25 kg);2;436.39;872.78
+67;30;PC-005;Óleo hidráulico ISO 68 (balde 20 L);24;492.66;11823.84
+68;32;PC-005;Óleo hidráulico ISO 68 (balde 20 L);1;461.19;461.19
+69;33;MP-004;Masterbatch branco (saco 25 kg);10;654.27;6542.70
+70;33;MP-004;Masterbatch branco (saco 25 kg);4;589.93;2359.72
+71;34;SV-001;Calibração de paquímetro;24;74.25;1782.00
+72;37;MP-001;Polipropileno homopolímero (saco 25 kg);4;292.32;1169.28
+73;38;EP-002;Protetor auricular tipo plug (caixa 100);24;105.78;2538.72
+74;38;EP-002;Protetor auricular tipo plug (caixa 100);1;83.98;83.98
+75;38;EP-001;Luva de vaqueta (par);1;19.02;19.02
+76;38;EP-001;Luva de vaqueta (par);4;20.75;83.00
+77;39;EM-002;Saco plástico 60x80 (milheiro);1;223.54;223.54
+78;39;EM-002;Saco plástico 60x80 (milheiro);24;245.78;5898.72
+79;40;EM-004;Palete PBR;6;58.24;349.44
+80;41;EM-001;Caixa de papelão 40x30x30 (pacote 50);4;208.87;835.48
+81;41;EM-001;Caixa de papelão 40x30x30 (pacote 50);6;204.10;1224.60
+82;41;EM-004;Palete PBR;24;59.59;1430.16
+83;42;PC-002;Termopar tipo J;24;61.98;1487.52
+84;42;PC-001;Resistência de cartucho 400 W;1;149.64;149.64
+85;42;PC-001;Resistência de cartucho 400 W;6;145.71;874.26
+86;42;PC-001;Resistência de cartucho 400 W;24;127.57;3061.68
+87;43;MP-002;Polietileno de alta densidade (saco 25 kg);1;233.11;233.11
+88;43;MP-003;ABS natural (saco 25 kg);2;450.55;901.10
+89;43;MP-003;ABS natural (saco 25 kg);10;430.03;4300.30
+90;44;MP-001;Polipropileno homopolímero (saco 25 kg);10;320.87;3208.70
+91;44;MP-001;Polipropileno homopolímero (saco 25 kg);4;261.87;1047.48
+92;45;PC-003;Válvula direcional hidráulica;1;1674.83;1674.83
+93;46;PC-005;Óleo hidráulico ISO 68 (balde 20 L);6;524.14;3144.84
+94;49;SV-004;Limpeza industrial mensal;1;3955.32;3955.32
+95;50;MP-003;ABS natural (saco 25 kg);1;393.98;393.98
+96;50;MP-003;ABS natural (saco 25 kg);2;464.82;929.64
+97;53;PC-003;Válvula direcional hidráulica;2;1678.94;3357.88
+98;53;PC-003;Válvula direcional hidráulica;1;2035.65;2035.65
+99;53;PC-003;Válvula direcional hidráulica;2;1833.82;3667.64
+100;53;PC-003;Válvula direcional hidráulica;1;1698.80;1698.80
+101;55;EM-003;Etiqueta térmica 100x50 (rolo 1000);4;48.73;194.92
+102;56;MP-001;Polipropileno homopolímero (saco 25 kg);6;324.49;1946.94
+103;56;MP-001;Polipropileno homopolímero (saco 25 kg);16;270.34;4325.44
+104;56;MP-001;Polipropileno homopolímero (saco 25 kg);6;288.85;1733.10
+105;60;SV-001;Calibração de paquímetro;16;94.07;1505.12
+106;60;SV-001;Calibração de paquímetro;10;93.31;933.10
+107;63;EP-004;Uniforme operacional (conjunto);10;118.63;1186.30
+108;63;EP-003;Óculos de segurança incolor;24;11.24;269.76
+109;63;EP-003;Óculos de segurança incolor;1;13.21;13.21
+110;64;EM-002;Saco plástico 60x80 (milheiro);2;276.22;552.44
+111;64;EM-002;Saco plástico 60x80 (milheiro);6;268.88;1613.28
+112;64;EM-003;Etiqueta térmica 100x50 (rolo 1000);1;48.86;48.86
+113;66;SV-004;Limpeza industrial mensal;2;4473.31;8946.62
+114;68;EP-003;Óculos de segurança incolor;24;13.63;327.12
+115;68;EP-003;Óculos de segurança incolor;2;12.06;24.12
+116;68;EP-004;Uniforme operacional (conjunto);6;132.17;793.02
+117;69;MP-001;Polipropileno homopolímero (saco 25 kg);16;251.51;4024.16
+118;69;MP-001;Polipropileno homopolímero (saco 25 kg);2;274.03;548.06
+119;70;EP-001;Luva de vaqueta (par);24;18.07;433.68
+120;70;EP-001;Luva de vaqueta (par);2;16.21;32.42
+121;71;MP-001;Polipropileno homopolímero (saco 25 kg);1;291.26;291.26
+122;71;MP-001;Polipropileno homopolímero (saco 25 kg);1;269.39;269.39
+123;71;MP-001;Polipropileno homopolímero (saco 25 kg);16;330.11;5281.76
+124;71;MP-001;Polipropileno homopolímero (saco 25 kg);6;246.15;1476.90
+125;73;EM-001;Caixa de papelão 40x30x30 (pacote 50);16;191.29;3060.64
+126;74;PC-004;Bico de injeção (unidade);6;875.94;5255.64
+127;74;SV-002;Manutenção corretiva de molde (hora);4;242.90;971.60
+128;74;SV-002;Manutenção corretiva de molde (hora);6;215.92;1295.52
+129;74;SV-002;Manutenção corretiva de molde (hora);10;215.82;2158.20
+130;76;MP-001;Polipropileno homopolímero (saco 25 kg);6;276.36;1658.16
+131;78;PC-003;Válvula direcional hidráulica;2;2057.48;4114.96
+132;78;PC-003;Válvula direcional hidráulica;1;1677.61;1677.61
+133;79;SV-003;Frete dedicado regional;1;1320.72;1320.72
+134;79;SV-003;Frete dedicado regional;1;1501.07;1501.07
+135;80;MP-001;Polipropileno homopolímero (saco 25 kg);24;321.05;7705.20
+136;81;MP-004;Masterbatch branco (saco 25 kg);10;611.79;6117.90
+137;81;MP-005;Masterbatch preto (saco 25 kg);1;438.44;438.44
+138;82;MP-001;Polipropileno homopolímero (saco 25 kg);1;250.92;250.92
+139;82;MP-001;Polipropileno homopolímero (saco 25 kg);24;287.77;6906.48
+140;82;MP-001;Polipropileno homopolímero (saco 25 kg);4;326.47;1305.88
+141;82;MP-001;Polipropileno homopolímero (saco 25 kg);2;280.12;560.24
+142;84;EP-003;Óculos de segurança incolor;4;13.71;54.84
+143;84;EP-003;Óculos de segurança incolor;16;12.18;194.88
+144;85;SV-001;Calibração de paquímetro;1;72.53;72.53
+145;85;SV-001;Calibração de paquímetro;10;92.93;929.30
+146;85;SV-001;Calibração de paquímetro;4;74.91;299.64
+147;85;SV-001;Calibração de paquímetro;10;92.25;922.50
+148;86;SV-003;Frete dedicado regional;2;1342.77;2685.54
+149;86;SV-003;Frete dedicado regional;1;1372.29;1372.29
+150;86;SV-003;Frete dedicado regional;2;1151.10;2302.20
+151;87;MP-002;Polietileno de alta densidade (saco 25 kg);6;274.00;1644.00
+152;87;MP-002;Polietileno de alta densidade (saco 25 kg);4;261.26;1045.04
+153;88;TI-002;Coletor de dados com leitor;1;3913.86;3913.86
+154;88;TI-002;Coletor de dados com leitor;2;3736.09;7472.18
+155;89;PC-004;Bico de injeção (unidade);4;827.39;3309.56
+156;89;SV-002;Manutenção corretiva de molde (hora);4;203.08;812.32
+157;89;SV-002;Manutenção corretiva de molde (hora);16;212.79;3404.64
+158;89;PC-004;Bico de injeção (unidade);16;1033.27;16532.32
+159;90;EP-001;Luva de vaqueta (par);1;19.17;19.17
+160;90;EP-001;Luva de vaqueta (par);16;15.83;253.28
+161;90;EP-002;Protetor auricular tipo plug (caixa 100);16;89.39;1430.24
+162;91;SV-002;Manutenção corretiva de molde (hora);6;230.21;1381.26
+163;91;PC-004;Bico de injeção (unidade);24;832.08;19969.92
+164;91;SV-002;Manutenção corretiva de molde (hora);24;222.64;5343.36
+165;92;PC-005;Óleo hidráulico ISO 68 (balde 20 L);1;569.02;569.02
+166;92;PC-005;Óleo hidráulico ISO 68 (balde 20 L);10;489.08;4890.80
+167;92;PC-005;Óleo hidráulico ISO 68 (balde 20 L);24;460.69;11056.56
+168;93;PC-005;Óleo hidráulico ISO 68 (balde 20 L);2;484.35;968.70
+169;93;PC-005;Óleo hidráulico ISO 68 (balde 20 L);2;425.50;851.00
+170;93;PC-005;Óleo hidráulico ISO 68 (balde 20 L);6;521.10;3126.60
+171;93;PC-005;Óleo hidráulico ISO 68 (balde 20 L);16;542.56;8680.96
+172;95;EP-004;Uniforme operacional (conjunto);16;140.55;2248.80
+173;95;EP-004;Uniforme operacional (conjunto);24;128.25;3078.00
+174;95;EP-003;Óculos de segurança incolor;2;13.10;26.20
+175;95;EP-003;Óculos de segurança incolor;10;13.91;139.10
+176;97;EP-001;Luva de vaqueta (par);16;20.45;327.20
+177;97;EP-001;Luva de vaqueta (par);2;16.32;32.64
+178;97;EP-001;Luva de vaqueta (par);24;16.47;395.28
+179;97;EP-001;Luva de vaqueta (par);6;19.56;117.36
+180;99;TI-002;Coletor de dados com leitor;1;3024.18;3024.18
+181;100;MP-005;Masterbatch preto (saco 25 kg);10;393.68;3936.80
+182;100;MP-005;Masterbatch preto (saco 25 kg);10;363.62;3636.20
+183;100;MP-005;Masterbatch preto (saco 25 kg);16;362.29;5796.64
+184;102;SV-002;Manutenção corretiva de molde (hora);16;194.84;3117.44
+185;103;EM-004;Palete PBR;24;72.25;1734.00
+186;103;EM-004;Palete PBR;1;69.08;69.08
+187;103;EM-004;Palete PBR;10;60.17;601.70
+188;104;EP-002;Protetor auricular tipo plug (caixa 100);24;107.07;2569.68
+189;104;EP-002;Protetor auricular tipo plug (caixa 100);1;106.01;106.01
+190;104;EP-001;Luva de vaqueta (par);16;19.52;312.32
+191;104;EP-002;Protetor auricular tipo plug (caixa 100);2;108.09;216.18
+192;107;SV-003;Frete dedicado regional;2;1296.23;2592.46
+193;111;MP-001;Polipropileno homopolímero (saco 25 kg);16;290.33;4645.28
+194;111;MP-001;Polipropileno homopolímero (saco 25 kg);10;293.51;2935.10
+195;111;MP-001;Polipropileno homopolímero (saco 25 kg);1;261.90;261.90
+196;114;EP-001;Luva de vaqueta (par);4;17.73;70.92
+197;114;EP-001;Luva de vaqueta (par);10;16.68;166.80
+198;114;EP-001;Luva de vaqueta (par);1;16.64;16.64
+199;115;SV-004;Limpeza industrial mensal;1;4079.52;4079.52
+200;115;SV-004;Limpeza industrial mensal;1;4069.49;4069.49
+201;116;EM-002;Saco plástico 60x80 (milheiro);1;244.54;244.54
+202;117;SV-002;Manutenção corretiva de molde (hora);4;199.61;798.44
+203;117;PC-004;Bico de injeção (unidade);10;913.49;9134.90
+204;117;PC-004;Bico de injeção (unidade);16;1096.41;17542.56
+205;118;MP-005;Masterbatch preto (saco 25 kg);16;340.74;5451.84
+206;118;MP-004;Masterbatch branco (saco 25 kg);16;728.89;11662.24
+207;120;EP-004;Uniforme operacional (conjunto);2;121.37;242.74
+208;120;EP-003;Óculos de segurança incolor;16;11.92;190.72
+209;122;PC-003;Válvula direcional hidráulica;1;1898.48;1898.48
+210;124;EP-002;Protetor auricular tipo plug (caixa 100);4;101.17;404.68
+211;126;PC-003;Válvula direcional hidráulica;1;1680.66;1680.66
+212;127;PC-002;Termopar tipo J;2;49.56;99.12
+213;127;PC-002;Termopar tipo J;16;61.27;980.32
+214;127;PC-002;Termopar tipo J;4;52.89;211.56
+215;127;PC-002;Termopar tipo J;2;51.27;102.54
+216;129;MP-005;Masterbatch preto (saco 25 kg);16;413.92;6622.72
+217;129;MP-005;Masterbatch preto (saco 25 kg);24;362.19;8692.56
+218;130;SV-004;Limpeza industrial mensal;1;4680.48;4680.48
+219;131;SV-004;Limpeza industrial mensal;1;3814.78;3814.78
+220;131;SV-004;Limpeza industrial mensal;2;4150.56;8301.12
+221;131;SV-004;Limpeza industrial mensal;1;4156.76;4156.76
+222;131;SV-004;Limpeza industrial mensal;1;3721.68;3721.68
+223;132;MP-005;Masterbatch preto (saco 25 kg);24;421.09;10106.16
+224;132;MP-005;Masterbatch preto (saco 25 kg);4;373.77;1495.08
+225;132;MP-005;Masterbatch preto (saco 25 kg);10;354.88;3548.80
+226;132;MP-005;Masterbatch preto (saco 25 kg);24;426.59;10238.16
+227;134;SV-002;Manutenção corretiva de molde (hora);4;196.09;784.36
+228;134;PC-004;Bico de injeção (unidade);1;1036.27;1036.27
+229;135;EP-001;Luva de vaqueta (par);16;17.47;279.52
+230;135;EP-002;Protetor auricular tipo plug (caixa 100);10;98.67;986.70
+231;135;EP-002;Protetor auricular tipo plug (caixa 100);2;100.95;201.90
+232;137;SV-002;Manutenção corretiva de molde (hora);16;206.98;3311.68
+233;137;PC-004;Bico de injeção (unidade);1;904.42;904.42
+234;137;PC-004;Bico de injeção (unidade);4;1090.06;4360.24
+235;137;PC-004;Bico de injeção (unidade);2;910.22;1820.44
+236;138;SV-003;Frete dedicado regional;1;1547.51;1547.51
+237;138;SV-003;Frete dedicado regional;1;1503.78;1503.78
+238;139;MP-001;Polipropileno homopolímero (saco 25 kg);24;295.96;7103.04
+239;139;MP-001;Polipropileno homopolímero (saco 25 kg);4;277.36;1109.44
+240;140;PC-001;Resistência de cartucho 400 W;6;131.25;787.50
+241;141;TI-001;Notebook corporativo;1;5734.71;5734.71
+242;143;SV-003;Frete dedicado regional;2;1296.29;2592.58
+243;144;PC-002;Termopar tipo J;24;63.91;1533.84
+244;144;PC-001;Resistência de cartucho 400 W;1;141.66;141.66
+245;144;PC-001;Resistência de cartucho 400 W;24;134.84;3236.16
+246;145;TI-002;Coletor de dados com leitor;1;3196.74;3196.74
+247;145;TI-001;Notebook corporativo;1;6598.59;6598.59
+248;146;PC-005;Óleo hidráulico ISO 68 (balde 20 L);2;481.44;962.88
+249;146;PC-005;Óleo hidráulico ISO 68 (balde 20 L);10;445.14;4451.40
+250;146;PC-005;Óleo hidráulico ISO 68 (balde 20 L);24;517.96;12431.04
+251;147;SV-001;Calibração de paquímetro;24;87.27;2094.48
+252;147;SV-001;Calibração de paquímetro;6;85.85;515.10
+253;147;SV-001;Calibração de paquímetro;10;86.37;863.70
+254;147;SV-001;Calibração de paquímetro;10;80.59;805.90
+255;148;EP-004;Uniforme operacional (conjunto);10;130.59;1305.90
+256;148;EP-004;Uniforme operacional (conjunto);24;136.99;3287.76
+257;149;SV-004;Limpeza industrial mensal;1;4066.86;4066.86
+258;149;SV-004;Limpeza industrial mensal;1;3702.60;3702.60
+259;149;SV-004;Limpeza industrial mensal;1;4369.44;4369.44
+260;149;SV-004;Limpeza industrial mensal;2;4424.90;8849.80
+261;151;SV-003;Frete dedicado regional;2;1372.69;2745.38
+262;154;SV-003;Frete dedicado regional;1;1195.46;1195.46
+263;157;SV-002;Manutenção corretiva de molde (hora);1;225.65;225.65
+264;159;PC-004;Bico de injeção (unidade);10;991.71;9917.10
+265;159;SV-002;Manutenção corretiva de molde (hora);2;250.40;500.80
+266;159;SV-002;Manutenção corretiva de molde (hora);4;215.95;863.80
+267;159;PC-004;Bico de injeção (unidade);1;962.57;962.57
+268;161;TI-003;Licença anual de antivírus (usuário);16;86.94;1391.04
+269;161;TI-002;Coletor de dados com leitor;1;3323.93;3323.93
+270;161;TI-001;Notebook corporativo;1;6528.05;6528.05
+271;163;SV-001;Calibração de paquímetro;16;95.39;1526.24
+272;164;EP-004;Uniforme operacional (conjunto);2;124.00;248.00
+273;164;EP-004;Uniforme operacional (conjunto);4;134.30;537.20
+274;164;EP-003;Óculos de segurança incolor;1;11.62;11.62
+275;165;EP-001;Luva de vaqueta (par);2;20.64;41.28
+276;165;EP-002;Protetor auricular tipo plug (caixa 100);24;95.38;2289.12
+277;166;EP-004;Uniforme operacional (conjunto);2;132.80;265.60
+278;166;EP-003;Óculos de segurança incolor;6;11.01;66.06
+279;166;EP-003;Óculos de segurança incolor;10;12.35;123.50
+280;167;TI-003;Licença anual de antivírus (usuário);24;104.28;2502.72
+281;167;TI-003;Licença anual de antivírus (usuário);10;88.49;884.90
+282;167;TI-002;Coletor de dados com leitor;1;3953.51;3953.51
+283;167;TI-002;Coletor de dados com leitor;1;3818.87;3818.87
+284;168;PC-005;Óleo hidráulico ISO 68 (balde 20 L);1;500.67;500.67
+285;168;PC-005;Óleo hidráulico ISO 68 (balde 20 L);2;426.16;852.32
+286;168;PC-005;Óleo hidráulico ISO 68 (balde 20 L);2;515.11;1030.22
+287;170;MP-002;Polietileno de alta densidade (saco 25 kg);24;264.21;6341.04
+288;170;MP-002;Polietileno de alta densidade (saco 25 kg);4;227.57;910.28
+289;171;SV-001;Calibração de paquímetro;1;75.44;75.44
+290;171;SV-001;Calibração de paquímetro;1;77.35;77.35
+291;171;SV-001;Calibração de paquímetro;2;76.99;153.98
+292;171;SV-001;Calibração de paquímetro;2;83.67;167.34
+293;172;PC-003;Válvula direcional hidráulica;2;2105.51;4211.02
+294;172;PC-003;Válvula direcional hidráulica;2;2100.12;4200.24
+295;172;PC-003;Válvula direcional hidráulica;1;1680.94;1680.94
+296;173;MP-004;Masterbatch branco (saco 25 kg);16;671.54;10744.64
+297;173;MP-005;Masterbatch preto (saco 25 kg);10;343.87;3438.70
+298;173;MP-004;Masterbatch branco (saco 25 kg);10;556.79;5567.90
+299;174;EP-001;Luva de vaqueta (par);4;20.29;81.16
+300;174;EP-001;Luva de vaqueta (par);2;21.00;42.00
+301;175;PC-001;Resistência de cartucho 400 W;10;157.61;1576.10
+302;175;PC-001;Resistência de cartucho 400 W;2;143.60;287.20
+303;175;PC-002;Termopar tipo J;16;58.24;931.84
+304;175;PC-001;Resistência de cartucho 400 W;4;123.43;493.72
+305;177;PC-003;Válvula direcional hidráulica;1;1846.38;1846.38
+306;177;PC-003;Válvula direcional hidráulica;2;1910.85;3821.70
+307;177;PC-003;Válvula direcional hidráulica;2;2088.28;4176.56
+308;178;PC-004;Bico de injeção (unidade);4;982.68;3930.72
+309;179;MP-005;Masterbatch preto (saco 25 kg);16;413.22;6611.52
+310;179;MP-005;Masterbatch preto (saco 25 kg);4;358.02;1432.08
+311;179;MP-004;Masterbatch branco (saco 25 kg);4;560.66;2242.64
+312;181;MP-002;Polietileno de alta densidade (saco 25 kg);24;244.15;5859.60
+313;181;MP-003;ABS natural (saco 25 kg);16;433.74;6939.84
+314;182;PC-003;Válvula direcional hidráulica;1;1871.17;1871.17
+315;182;PC-003;Válvula direcional hidráulica;2;2089.94;4179.88
+316;182;PC-003;Válvula direcional hidráulica;1;1697.79;1697.79
+317;182;PC-003;Válvula direcional hidráulica;2;1771.45;3542.90
+318;184;SV-004;Limpeza industrial mensal;2;3912.42;7824.84
+319;184;SV-004;Limpeza industrial mensal;1;3668.53;3668.53
+320;184;SV-004;Limpeza industrial mensal;1;3904.88;3904.88
+321;184;SV-004;Limpeza industrial mensal;1;3806.38;3806.38
+322;185;SV-003;Frete dedicado regional;1;1547.95;1547.95
+323;185;SV-003;Frete dedicado regional;1;1516.03;1516.03
+324;185;SV-003;Frete dedicado regional;2;1321.75;2643.50
+325;187;EM-001;Caixa de papelão 40x30x30 (pacote 50);24;161.87;3884.88
+326;187;EM-001;Caixa de papelão 40x30x30 (pacote 50);1;186.68;186.68
+327;187;EM-001;Caixa de papelão 40x30x30 (pacote 50);10;172.79;1727.90
+328;187;EM-004;Palete PBR;2;61.59;123.18
+329;188;EM-002;Saco plástico 60x80 (milheiro);4;264.38;1057.52
+330;188;EM-003;Etiqueta térmica 100x50 (rolo 1000);2;52.75;105.50
+331;188;EM-003;Etiqueta térmica 100x50 (rolo 1000);1;57.96;57.96
+332;188;EM-003;Etiqueta térmica 100x50 (rolo 1000);10;44.53;445.30
+333;189;MP-001;Polipropileno homopolímero (saco 25 kg);2;259.71;519.42
+334;189;MP-001;Polipropileno homopolímero (saco 25 kg);2;279.84;559.68
+335;189;MP-001;Polipropileno homopolímero (saco 25 kg);1;289.94;289.94
+336;190;TI-003;Licença anual de antivírus (usuário);6;91.28;547.68
+337;190;TI-003;Licença anual de antivírus (usuário);2;104.57;209.14
+338;193;MP-001;Polipropileno homopolímero (saco 25 kg);1;267.22;267.22
+339;193;MP-001;Polipropileno homopolímero (saco 25 kg);10;311.54;3115.40
+340;195;MP-001;Polipropileno homopolímero (saco 25 kg);4;330.58;1322.32
+341;195;MP-001;Polipropileno homopolímero (saco 25 kg);1;274.76;274.76
+342;195;MP-001;Polipropileno homopolímero (saco 25 kg);2;249.61;499.22
+343;195;MP-001;Polipropileno homopolímero (saco 25 kg);16;289.54;4632.64
+344;196;SV-001;Calibração de paquímetro;2;91.24;182.48
+345;197;EM-002;Saco plástico 60x80 (milheiro);10;261.88;2618.80
+346;198;EM-004;Palete PBR;16;71.65;1146.40
+347;199;EM-003;Etiqueta térmica 100x50 (rolo 1000);2;53.16;106.32
+348;199;EM-002;Saco plástico 60x80 (milheiro);6;273.45;1640.70
+349;199;EM-002;Saco plástico 60x80 (milheiro);24;210.99;5063.76
+350;199;EM-002;Saco plástico 60x80 (milheiro);4;260.77;1043.08
+351;200;MP-001;Polipropileno homopolímero (saco 25 kg);24;244.56;5869.44
+352;200;MP-001;Polipropileno homopolímero (saco 25 kg);10;324.39;3243.90
+353;203;SV-004;Limpeza industrial mensal;2;3710.41;7420.82
+354;203;SV-004;Limpeza industrial mensal;2;4064.07;8128.14
+355;203;SV-004;Limpeza industrial mensal;1;4754.00;4754.00
+356;204;SV-001;Calibração de paquímetro;2;92.02;184.04
+357;205;PC-004;Bico de injeção (unidade);6;1078.44;6470.64
+358;205;SV-002;Manutenção corretiva de molde (hora);2;216.14;432.28
+359;205;PC-004;Bico de injeção (unidade);24;1046.31;25111.44
+360;205;SV-002;Manutenção corretiva de molde (hora);4;233.55;934.20
+361;207;EM-001;Caixa de papelão 40x30x30 (pacote 50);10;207.22;2072.20
+362;207;EM-004;Palete PBR;16;74.05;1184.80
+363;207;EM-001;Caixa de papelão 40x30x30 (pacote 50);24;204.03;4896.72
+364;207;EM-004;Palete PBR;1;69.28;69.28
+365;209;PC-005;Óleo hidráulico ISO 68 (balde 20 L);24;444.92;10678.08
+366;209;PC-005;Óleo hidráulico ISO 68 (balde 20 L);2;547.40;1094.80
+367;209;PC-005;Óleo hidráulico ISO 68 (balde 20 L);16;515.97;8255.52
+368;210;SV-003;Frete dedicado regional;1;1335.46;1335.46
+369;210;SV-003;Frete dedicado regional;1;1517.48;1517.48
+370;210;SV-003;Frete dedicado regional;1;1483.46;1483.46
+371;213;SV-001;Calibração de paquímetro;16;84.08;1345.28
+372;213;SV-001;Calibração de paquímetro;16;92.34;1477.44
+373;214;SV-001;Calibração de paquímetro;6;83.40;500.40
+374;214;SV-001;Calibração de paquímetro;1;74.27;74.27
+375;214;SV-001;Calibração de paquímetro;24;79.55;1909.20
+376;215;EM-001;Caixa de papelão 40x30x30 (pacote 50);2;215.29;430.58
+377;215;EM-004;Palete PBR;10;74.18;741.80
+378;216;EP-003;Óculos de segurança incolor;10;13.62;136.20
+379;216;EP-003;Óculos de segurança incolor;2;11.46;22.92
+380;217;SV-004;Limpeza industrial mensal;1;4465.66;4465.66
+381;220;PC-003;Válvula direcional hidráulica;1;1815.12;1815.12
+382;220;PC-003;Válvula direcional hidráulica;1;2078.94;2078.94
+383;220;PC-003;Válvula direcional hidráulica;2;2109.76;4219.52
+384;222;SV-003;Frete dedicado regional;1;1370.82;1370.82
+385;222;SV-003;Frete dedicado regional;2;1337.87;2675.74
+386;223;PC-004;Bico de injeção (unidade);16;971.38;15542.08
+387;223;PC-004;Bico de injeção (unidade);16;954.00;15264.00
+388;223;SV-002;Manutenção corretiva de molde (hora);4;194.46;777.84
+389;223;PC-004;Bico de injeção (unidade);16;985.49;15767.84
+390;224;SV-004;Limpeza industrial mensal;1;3743.82;3743.82
+391;224;SV-004;Limpeza industrial mensal;2;4494.58;8989.16
+392;224;SV-004;Limpeza industrial mensal;2;4541.53;9083.06
+393;225;MP-005;Masterbatch preto (saco 25 kg);24;395.76;9498.24
+394;225;MP-005;Masterbatch preto (saco 25 kg);6;372.11;2232.66
+395;225;MP-005;Masterbatch preto (saco 25 kg);10;398.55;3985.50
+396;225;MP-004;Masterbatch branco (saco 25 kg);16;561.10;8977.60
+397;226;EM-003;Etiqueta térmica 100x50 (rolo 1000);24;53.00;1272.00
+398;226;EM-002;Saco plástico 60x80 (milheiro);24;261.91;6285.84
+399;226;EM-002;Saco plástico 60x80 (milheiro);4;217.05;868.20
+400;226;EM-002;Saco plástico 60x80 (milheiro);24;223.63;5367.12
+401;229;SV-001;Calibração de paquímetro;10;92.37;923.70
+402;229;SV-001;Calibração de paquímetro;4;93.01;372.04
+403;232;TI-003;Licença anual de antivírus (usuário);10;100.20;1002.00
+404;233;PC-003;Válvula direcional hidráulica;2;1666.08;3332.16
+405;235;MP-003;ABS natural (saco 25 kg);24;352.81;8467.44
+406;236;EP-003;Óculos de segurança incolor;1;13.16;13.16
+407;237;PC-001;Resistência de cartucho 400 W;2;162.05;324.10
+408;237;PC-001;Resistência de cartucho 400 W;24;145.40;3489.60
+409;238;MP-003;ABS natural (saco 25 kg);1;385.00;385.00
+410;238;MP-002;Polietileno de alta densidade (saco 25 kg);4;227.88;911.52
+411;238;MP-002;Polietileno de alta densidade (saco 25 kg);2;246.01;492.02
+412;238;MP-003;ABS natural (saco 25 kg);2;421.04;842.08
+413;239;PC-001;Resistência de cartucho 400 W;2;130.89;261.78
+414;239;PC-002;Termopar tipo J;2;57.23;114.46
+415;239;PC-002;Termopar tipo J;16;57.66;922.56
+416;239;PC-001;Resistência de cartucho 400 W;16;123.48;1975.68
+417;240;MP-003;ABS natural (saco 25 kg);1;361.77;361.77
+418;241;TI-003;Licença anual de antivírus (usuário);10;86.15;861.50
+419;243;MP-004;Masterbatch branco (saco 25 kg);1;692.41;692.41
+420;243;MP-004;Masterbatch branco (saco 25 kg);6;586.13;3516.78
+421;243;MP-004;Masterbatch branco (saco 25 kg);1;700.17;700.17
+422;243;MP-005;Masterbatch preto (saco 25 kg);6;353.65;2121.90
+423;244;TI-001;Notebook corporativo;1;5631.66;5631.66
+424;246;EM-004;Palete PBR;2;69.13;138.26
+425;247;EP-001;Luva de vaqueta (par);4;17.94;71.76
+426;247;EP-002;Protetor auricular tipo plug (caixa 100);6;102.06;612.36
+427;247;EP-002;Protetor auricular tipo plug (caixa 100);1;85.30;85.30
+428;247;EP-001;Luva de vaqueta (par);10;20.31;203.10
+429;248;MP-002;Polietileno de alta densidade (saco 25 kg);16;287.90;4606.40
+430;250;PC-004;Bico de injeção (unidade);4;960.59;3842.36
+431;250;PC-004;Bico de injeção (unidade);16;1039.83;16637.28
+432;251;PC-005;Óleo hidráulico ISO 68 (balde 20 L);6;528.60;3171.60
+433;251;PC-005;Óleo hidráulico ISO 68 (balde 20 L);4;424.06;1696.24
+434;252;TI-003;Licença anual de antivírus (usuário);16;101.43;1622.88
+435;253;EM-001;Caixa de papelão 40x30x30 (pacote 50);1;179.48;179.48
+436;253;EM-001;Caixa de papelão 40x30x30 (pacote 50);24;178.20;4276.80
+437;253;EM-001;Caixa de papelão 40x30x30 (pacote 50);10;216.72;2167.20
+438;255;PC-003;Válvula direcional hidráulica;1;1913.05;1913.05
+439;255;PC-003;Válvula direcional hidráulica;2;2007.62;4015.24
+440;257;TI-002;Coletor de dados com leitor;2;2947.35;5894.70
+441;260;EM-001;Caixa de papelão 40x30x30 (pacote 50);1;180.38;180.38
+442;260;EM-001;Caixa de papelão 40x30x30 (pacote 50);6;201.69;1210.14
+443;261;TI-003;Licença anual de antivírus (usuário);24;102.99;2471.76
+444;261;TI-001;Notebook corporativo;2;5018.37;10036.74
+445;261;TI-003;Licença anual de antivírus (usuário);6;105.43;632.58
+446;263;PC-002;Termopar tipo J;2;65.05;130.10
+447;264;SV-003;Frete dedicado regional;1;1313.28;1313.28
+448;264;SV-003;Frete dedicado regional;1;1352.15;1352.15
+449;264;SV-003;Frete dedicado regional;1;1157.40;1157.40
+450;266;TI-002;Coletor de dados com leitor;2;3393.85;6787.70
+451;267;PC-005;Óleo hidráulico ISO 68 (balde 20 L);4;493.43;1973.72
+452;267;PC-005;Óleo hidráulico ISO 68 (balde 20 L);2;478.78;957.56
+453;267;PC-005;Óleo hidráulico ISO 68 (balde 20 L);2;449.92;899.84
+454;268;EP-004;Uniforme operacional (conjunto);6;155.14;930.84
+455;268;EP-003;Óculos de segurança incolor;2;12.12;24.24
+456;268;EP-003;Óculos de segurança incolor;2;11.61;23.22
+457;271;PC-003;Válvula direcional hidráulica;1;1907.47;1907.47
+458;272;EM-003;Etiqueta térmica 100x50 (rolo 1000);4;57.04;228.16
+459;273;EP-002;Protetor auricular tipo plug (caixa 100);10;82.89;828.90
+460;274;MP-003;ABS natural (saco 25 kg);4;385.11;1540.44
+461;274;MP-002;Polietileno de alta densidade (saco 25 kg);10;267.85;2678.50
+462;274;MP-003;ABS natural (saco 25 kg);6;467.98;2807.88
+463;274;MP-003;ABS natural (saco 25 kg);1;384.37;384.37
+464;275;TI-001;Notebook corporativo;1;5263.57;5263.57
+465;275;TI-001;Notebook corporativo;1;6311.81;6311.81
+466;275;TI-002;Coletor de dados com leitor;1;3800.44;3800.44
+467;276;MP-002;Polietileno de alta densidade (saco 25 kg);1;242.41;242.41
+468;276;MP-003;ABS natural (saco 25 kg);1;360.40;360.40
+469;276;MP-002;Polietileno de alta densidade (saco 25 kg);4;276.80;1107.20
+470;278;SV-004;Limpeza industrial mensal;1;3609.48;3609.48
+471;278;SV-004;Limpeza industrial mensal;1;4122.47;4122.47
+472;278;SV-004;Limpeza industrial mensal;1;4408.33;4408.33
+473;279;PC-005;Óleo hidráulico ISO 68 (balde 20 L);4;570.28;2281.12
+474;280;MP-005;Masterbatch preto (saco 25 kg);16;344.08;5505.28
+475;282;SV-003;Frete dedicado regional;2;1498.73;2997.46
+476;283;EM-004;Palete PBR;16;66.56;1064.96
+477;283;EM-004;Palete PBR;16;57.99;927.84
+478;284;TI-002;Coletor de dados com leitor;1;3079.07;3079.07
+479;286;SV-001;Calibração de paquímetro;1;87.05;87.05
+480;286;SV-001;Calibração de paquímetro;24;79.01;1896.24
+481;286;SV-001;Calibração de paquímetro;10;92.79;927.90
+482;286;SV-001;Calibração de paquímetro;6;97.70;586.20
+483;287;MP-005;Masterbatch preto (saco 25 kg);10;438.13;4381.30
+484;287;MP-004;Masterbatch branco (saco 25 kg);4;587.69;2350.76
+485;287;MP-004;Masterbatch branco (saco 25 kg);1;562.95;562.95
+486;289;MP-001;Polipropileno homopolímero (saco 25 kg);6;300.86;1805.16
+487;289;MP-001;Polipropileno homopolímero (saco 25 kg);4;251.41;1005.64
+488;289;MP-001;Polipropileno homopolímero (saco 25 kg);2;269.77;539.54
+489;289;MP-001;Polipropileno homopolímero (saco 25 kg);6;297.67;1786.02
+490;290;MP-005;Masterbatch preto (saco 25 kg);10;422.94;4229.40
+491;290;MP-004;Masterbatch branco (saco 25 kg);1;623.71;623.71
+492;293;MP-001;Polipropileno homopolímero (saco 25 kg);24;246.94;5926.56
+493;293;MP-001;Polipropileno homopolímero (saco 25 kg);10;278.64;2786.40
+494;294;SV-004;Limpeza industrial mensal;2;3911.01;7822.02
+495;296;EP-002;Protetor auricular tipo plug (caixa 100);10;108.88;1088.80
+496;296;EP-002;Protetor auricular tipo plug (caixa 100);16;87.58;1401.28
+497;296;EP-001;Luva de vaqueta (par);2;18.98;37.96
+498;298;SV-004;Limpeza industrial mensal;2;3700.22;7400.44
+499;299;PC-003;Válvula direcional hidráulica;1;1708.04;1708.04
+500;301;MP-001;Polipropileno homopolímero (saco 25 kg);24;256.30;6151.20
+501;301;MP-001;Polipropileno homopolímero (saco 25 kg);4;323.93;1295.72
+502;301;MP-001;Polipropileno homopolímero (saco 25 kg);24;252.61;6062.64
+503;301;MP-001;Polipropileno homopolímero (saco 25 kg);2;326.10;652.20
+504;302;SV-002;Manutenção corretiva de molde (hora);2;225.32;450.64
+505;304;MP-003;ABS natural (saco 25 kg);4;397.13;1588.52
+506;304;MP-003;ABS natural (saco 25 kg);16;353.45;5655.20
+507;304;MP-003;ABS natural (saco 25 kg);6;423.51;2541.06
+508;304;MP-003;ABS natural (saco 25 kg);24;463.57;11125.68
+509;306;MP-005;Masterbatch preto (saco 25 kg);24;344.53;8268.72
+510;307;EM-004;Palete PBR;24;68.09;1634.16
+511;308;TI-001;Notebook corporativo;1;6095.15;6095.15
+512;309;SV-004;Limpeza industrial mensal;1;4034.77;4034.77
+513;309;SV-004;Limpeza industrial mensal;1;3606.33;3606.33
+514;309;SV-004;Limpeza industrial mensal;1;3806.07;3806.07
+515;310;PC-003;Válvula direcional hidráulica;1;2019.78;2019.78
+516;312;TI-001;Notebook corporativo;1;6471.78;6471.78
+517;312;TI-001;Notebook corporativo;1;6198.84;6198.84
+518;312;TI-002;Coletor de dados com leitor;2;3142.66;6285.32
+519;312;TI-001;Notebook corporativo;1;5395.27;5395.27
+520;313;MP-004;Masterbatch branco (saco 25 kg);2;624.50;1249.00
+521;313;MP-004;Masterbatch branco (saco 25 kg);4;752.98;3011.92
+522;313;MP-005;Masterbatch preto (saco 25 kg);6;389.39;2336.34
+523;313;MP-004;Masterbatch branco (saco 25 kg);16;712.63;11402.08
+524;314;PC-001;Resistência de cartucho 400 W;1;151.17;151.17
+525;314;PC-001;Resistência de cartucho 400 W;1;136.72;136.72
+526;314;PC-002;Termopar tipo J;1;54.74;54.74
+527;315;TI-001;Notebook corporativo;1;5478.31;5478.31
+528;315;TI-001;Notebook corporativo;2;6057.86;12115.72
+529;315;TI-003;Licença anual de antivírus (usuário);4;103.24;412.96
+530;315;TI-002;Coletor de dados com leitor;1;3192.52;3192.52
+531;316;EP-001;Luva de vaqueta (par);24;15.78;378.72
+532;316;EP-001;Luva de vaqueta (par);24;19.41;465.84
+533;317;PC-004;Bico de injeção (unidade);24;973.95;23374.80
+534;319;MP-004;Masterbatch branco (saco 25 kg);16;707.82;11325.12
+535;319;MP-005;Masterbatch preto (saco 25 kg);2;353.53;707.06
+536;319;MP-004;Masterbatch branco (saco 25 kg);2;636.91;1273.82
+537;319;MP-005;Masterbatch preto (saco 25 kg);2;385.29;770.58
+538;320;SV-003;Frete dedicado regional;1;1219.23;1219.23
+539;320;SV-003;Frete dedicado regional;1;1261.75;1261.75
+540;321;TI-002;Coletor de dados com leitor;1;3891.52;3891.52
+541;321;TI-003;Licença anual de antivírus (usuário);1;87.58;87.58
+542;321;TI-003;Licença anual de antivírus (usuário);16;93.36;1493.76
+543;322;EM-004;Palete PBR;10;61.84;618.40
+544;322;EM-001;Caixa de papelão 40x30x30 (pacote 50);1;193.55;193.55
+545;322;EM-004;Palete PBR;6;73.96;443.76
+546;324;SV-004;Limpeza industrial mensal;1;4057.15;4057.15
+547;324;SV-004;Limpeza industrial mensal;1;3884.60;3884.60
+548;324;SV-004;Limpeza industrial mensal;1;4024.32;4024.32
+549;325;MP-004;Masterbatch branco (saco 25 kg);1;684.74;684.74
+550;325;MP-004;Masterbatch branco (saco 25 kg);10;648.64;6486.40
+551;325;MP-005;Masterbatch preto (saco 25 kg);6;362.90;2177.40
+552;326;SV-002;Manutenção corretiva de molde (hora);4;208.90;835.60
+553;326;PC-004;Bico de injeção (unidade);1;845.25;845.25
+554;327;PC-005;Óleo hidráulico ISO 68 (balde 20 L);24;482.81;11587.44
+555;329;TI-002;Coletor de dados com leitor;1;2967.79;2967.79
+556;329;TI-002;Coletor de dados com leitor;1;3257.27;3257.27
+557;329;TI-002;Coletor de dados com leitor;2;3084.75;6169.50
+558;329;TI-002;Coletor de dados com leitor;1;3562.76;3562.76
+559;330;SV-004;Limpeza industrial mensal;2;4142.31;8284.62
+560;330;SV-004;Limpeza industrial mensal;1;4814.54;4814.54
+561;330;SV-004;Limpeza industrial mensal;1;4498.23;4498.23
+562;330;SV-004;Limpeza industrial mensal;2;4706.81;9413.62
+563;331;PC-002;Termopar tipo J;16;57.41;918.56
+564;331;PC-001;Resistência de cartucho 400 W;24;135.31;3247.44
+565;332;EP-004;Uniforme operacional (conjunto);10;140.80;1408.00
+566;332;EP-003;Óculos de segurança incolor;6;13.50;81.00
+567;332;EP-004;Uniforme operacional (conjunto);6;142.88;857.28
+568;333;TI-003;Licença anual de antivírus (usuário);16;103.17;1650.72
+569;333;TI-001;Notebook corporativo;2;6418.78;12837.56
+570;335;TI-001;Notebook corporativo;1;5559.07;5559.07
+571;336;PC-002;Termopar tipo J;6;62.72;376.32
+572;337;PC-001;Resistência de cartucho 400 W;24;157.09;3770.16
+573;337;PC-001;Resistência de cartucho 400 W;10;149.85;1498.50
+574;337;PC-002;Termopar tipo J;24;55.80;1339.20
+575;339;PC-005;Óleo hidráulico ISO 68 (balde 20 L);6;518.56;3111.36
+576;339;PC-005;Óleo hidráulico ISO 68 (balde 20 L);4;450.36;1801.44
+577;340;PC-001;Resistência de cartucho 400 W;4;140.11;560.44
+578;340;PC-002;Termopar tipo J;24;63.92;1534.08
+579;340;PC-002;Termopar tipo J;16;56.41;902.56
+580;340;PC-002;Termopar tipo J;4;59.11;236.44
+581;341;TI-001;Notebook corporativo;1;6235.03;6235.03
+582;342;SV-003;Frete dedicado regional;1;1455.13;1455.13
+583;344;PC-005;Óleo hidráulico ISO 68 (balde 20 L);24;554.02;13296.48
+584;344;PC-005;Óleo hidráulico ISO 68 (balde 20 L);16;560.48;8967.68
+585;344;PC-005;Óleo hidráulico ISO 68 (balde 20 L);10;557.96;5579.60
+586;345;SV-003;Frete dedicado regional;1;1298.36;1298.36
+587;346;PC-001;Resistência de cartucho 400 W;16;156.62;2505.92
+588;346;PC-001;Resistência de cartucho 400 W;2;131.39;262.78
+589;346;PC-001;Resistência de cartucho 400 W;24;156.50;3756.00
+590;346;PC-002;Termopar tipo J;6;56.73;340.38
+591;347;PC-003;Válvula direcional hidráulica;2;1804.32;3608.64
+592;348;SV-001;Calibração de paquímetro;4;92.92;371.68
+593;348;SV-001;Calibração de paquímetro;2;84.11;168.22
+594;349;SV-001;Calibração de paquímetro;16;87.45;1399.20
+595;349;SV-001;Calibração de paquímetro;2;73.84;147.68
+596;349;SV-001;Calibração de paquímetro;6;81.59;489.54
+597;349;SV-001;Calibração de paquímetro;16;79.20;1267.20
+598;350;TI-003;Licença anual de antivírus (usuário);6;95.39;572.34
+599;350;TI-002;Coletor de dados com leitor;1;3645.18;3645.18
+600;351;MP-004;Masterbatch branco (saco 25 kg);10;749.88;7498.80
+601;351;MP-005;Masterbatch preto (saco 25 kg);16;419.68;6714.88
+602;351;MP-005;Masterbatch preto (saco 25 kg);6;442.38;2654.28
+603;352;TI-003;Licença anual de antivírus (usuário);4;84.80;339.20
+604;353;PC-004;Bico de injeção (unidade);16;1094.27;17508.32
+605;353;SV-002;Manutenção corretiva de molde (hora);16;203.83;3261.28
+606;353;SV-002;Manutenção corretiva de molde (hora);24;218.58;5245.92
+607;353;SV-002;Manutenção corretiva de molde (hora);16;215.37;3445.92
+608;354;MP-001;Polipropileno homopolímero (saco 25 kg);24;326.97;7847.28
+609;354;MP-001;Polipropileno homopolímero (saco 25 kg);24;298.76;7170.24
+610;355;MP-001;Polipropileno homopolímero (saco 25 kg);1;250.78;250.78
+611;355;MP-001;Polipropileno homopolímero (saco 25 kg);10;318.93;3189.30
+612;355;MP-001;Polipropileno homopolímero (saco 25 kg);24;267.99;6431.76
+613;355;MP-001;Polipropileno homopolímero (saco 25 kg);10;296.55;2965.50
+614;356;TI-001;Notebook corporativo;2;5883.81;11767.62
+615;356;TI-001;Notebook corporativo;1;6091.70;6091.70
+616;356;TI-001;Notebook corporativo;2;5354.48;10708.96
+617;358;SV-001;Calibração de paquímetro;10;89.69;896.90
+618;358;SV-001;Calibração de paquímetro;24;72.85;1748.40
+619;359;TI-002;Coletor de dados com leitor;1;3185.89;3185.89
+620;359;TI-003;Licença anual de antivírus (usuário);6;103.63;621.78
+621;359;TI-003;Licença anual de antivírus (usuário);1;85.89;85.89
+622;359;TI-002;Coletor de dados com leitor;1;3070.69;3070.69
+623;360;SV-004;Limpeza industrial mensal;1;4552.98;4552.98
+624;361;EP-004;Uniforme operacional (conjunto);16;152.76;2444.16
+625;362;EP-001;Luva de vaqueta (par);10;21.05;210.50
+626;362;EP-001;Luva de vaqueta (par);10;16.53;165.30
+627;363;TI-002;Coletor de dados com leitor;1;3851.19;3851.19
+628;363;TI-002;Coletor de dados com leitor;2;3878.73;7757.46
+629;364;SV-002;Manutenção corretiva de molde (hora);1;246.18;246.18
+630;365;EM-003;Etiqueta térmica 100x50 (rolo 1000);4;49.82;199.28
+631;365;EM-002;Saco plástico 60x80 (milheiro);24;268.06;6433.44
+632;365;EM-002;Saco plástico 60x80 (milheiro);10;244.63;2446.30
+633;366;PC-004;Bico de injeção (unidade);10;987.36;9873.60
+634;367;TI-003;Licença anual de antivírus (usuário);6;91.92;551.52
+635;368;SV-002;Manutenção corretiva de molde (hora);6;221.23;1327.38
+636;368;PC-004;Bico de injeção (unidade);24;943.39;22641.36
+637;369;MP-001;Polipropileno homopolímero (saco 25 kg);1;302.41;302.41
+638;370;MP-001;Polipropileno homopolímero (saco 25 kg);6;255.24;1531.44
+639;370;MP-001;Polipropileno homopolímero (saco 25 kg);2;312.14;624.28
+640;370;MP-001;Polipropileno homopolímero (saco 25 kg);10;272.88;2728.80
+641;370;MP-001;Polipropileno homopolímero (saco 25 kg);16;281.34;4501.44
+642;372;EP-004;Uniforme operacional (conjunto);6;125.97;755.82
+643;372;EP-003;Óculos de segurança incolor;16;12.07;193.12
+644;373;SV-003;Frete dedicado regional;2;1285.91;2571.82
+645;373;SV-003;Frete dedicado regional;1;1460.15;1460.15
+646;373;SV-003;Frete dedicado regional;1;1437.99;1437.99
+647;373;SV-003;Frete dedicado regional;1;1465.46;1465.46
+648;374;SV-004;Limpeza industrial mensal;1;3642.64;3642.64
+649;374;SV-004;Limpeza industrial mensal;2;4442.26;8884.52
+650;374;SV-004;Limpeza industrial mensal;2;4127.76;8255.52
+651;374;SV-004;Limpeza industrial mensal;1;3748.87;3748.87
+652;375;PC-005;Óleo hidráulico ISO 68 (balde 20 L);24;570.92;13702.08
+653;375;PC-005;Óleo hidráulico ISO 68 (balde 20 L);6;433.17;2599.02
+654;375;PC-005;Óleo hidráulico ISO 68 (balde 20 L);1;457.22;457.22
+655;376;MP-002;Polietileno de alta densidade (saco 25 kg);6;229.46;1376.76
+656;377;MP-001;Polipropileno homopolímero (saco 25 kg);10;266.24;2662.40
+657;377;MP-001;Polipropileno homopolímero (saco 25 kg);16;245.75;3932.00
+658;378;SV-002;Manutenção corretiva de molde (hora);1;198.69;198.69
+659;379;EM-002;Saco plástico 60x80 (milheiro);6;261.12;1566.72
+660;379;EM-002;Saco plástico 60x80 (milheiro);2;235.77;471.54
+661;379;EM-002;Saco plástico 60x80 (milheiro);6;276.24;1657.44
+662;381;MP-001;Polipropileno homopolímero (saco 25 kg);6;270.52;1623.12
+663;381;MP-001;Polipropileno homopolímero (saco 25 kg);10;256.29;2562.90
+664;381;MP-001;Polipropileno homopolímero (saco 25 kg);1;311.84;311.84
+665;381;MP-001;Polipropileno homopolímero (saco 25 kg);4;320.51;1282.04
+666;382;PC-001;Resistência de cartucho 400 W;4;125.81;503.24
+667;382;PC-001;Resistência de cartucho 400 W;4;124.13;496.52
+668;382;PC-001;Resistência de cartucho 400 W;1;127.68;127.68
+669;382;PC-001;Resistência de cartucho 400 W;4;155.18;620.72
+670;383;PC-003;Válvula direcional hidráulica;1;1761.04;1761.04
+671;383;PC-003;Válvula direcional hidráulica;2;1894.46;3788.92
+672;383;PC-003;Válvula direcional hidráulica;2;1924.17;3848.34
+673;383;PC-003;Válvula direcional hidráulica;1;1751.35;1751.35
+674;384;MP-003;ABS natural (saco 25 kg);24;377.16;9051.84
+675;384;MP-002;Polietileno de alta densidade (saco 25 kg);24;277.74;6665.76
+676;384;MP-002;Polietileno de alta densidade (saco 25 kg);10;225.96;2259.60
+677;385;SV-004;Limpeza industrial mensal;1;4137.26;4137.26
+678;385;SV-004;Limpeza industrial mensal;1;4525.72;4525.72
+679;386;MP-001;Polipropileno homopolímero (saco 25 kg);4;250.36;1001.44
+680;387;SV-002;Manutenção corretiva de molde (hora);2;202.48;404.96
+681;387;SV-002;Manutenção corretiva de molde (hora);24;242.89;5829.36
+682;388;MP-005;Masterbatch preto (saco 25 kg);24;434.69;10432.56
+683;388;MP-004;Masterbatch branco (saco 25 kg);16;659.87;10557.92
+684;388;MP-005;Masterbatch preto (saco 25 kg);24;395.95;9502.80
+685;389;SV-003;Frete dedicado regional;1;1417.16;1417.16
+686;389;SV-003;Frete dedicado regional;1;1422.44;1422.44
+687;390;PC-003;Válvula direcional hidráulica;1;1663.46;1663.46
+688;391;EM-002;Saco plástico 60x80 (milheiro);1;250.79;250.79
+689;391;EM-002;Saco plástico 60x80 (milheiro);1;209.92;209.92
+690;391;EM-003;Etiqueta térmica 100x50 (rolo 1000);24;59.73;1433.52
+691;393;MP-003;ABS natural (saco 25 kg);6;398.92;2393.52
+692;393;MP-003;ABS natural (saco 25 kg);1;353.73;353.73
+693;393;MP-003;ABS natural (saco 25 kg);2;366.53;733.06
+694;393;MP-002;Polietileno de alta densidade (saco 25 kg);10;239.07;2390.70
+695;395;TI-001;Notebook corporativo;1;5544.13;5544.13
+696;396;SV-002;Manutenção corretiva de molde (hora);4;244.29;977.16
+697;396;SV-002;Manutenção corretiva de molde (hora);2;235.03;470.06
+698;396;PC-004;Bico de injeção (unidade);24;842.26;20214.24
+699;396;PC-004;Bico de injeção (unidade);1;846.82;846.82
+700;397;PC-005;Óleo hidráulico ISO 68 (balde 20 L);6;493.02;2958.12
+701;397;PC-005;Óleo hidráulico ISO 68 (balde 20 L);6;523.25;3139.50
+702;397;PC-005;Óleo hidráulico ISO 68 (balde 20 L);4;514.41;2057.64
+703;399;PC-003;Válvula direcional hidráulica;1;2163.47;2163.47
+704;399;PC-003;Válvula direcional hidráulica;1;2001.32;2001.32
+705;400;EP-004;Uniforme operacional (conjunto);6;123.91;743.46
+706;400;EP-004;Uniforme operacional (conjunto);10;154.17;1541.70
+707;400;EP-003;Óculos de segurança incolor;16;12.09;193.44
+708;400;EP-003;Óculos de segurança incolor;2;11.05;22.10
+709;402;SV-002;Manutenção corretiva de molde (hora);16;221.21;3539.36
+710;402;PC-004;Bico de injeção (unidade);6;980.68;5884.08
+711;402;SV-002;Manutenção corretiva de molde (hora);16;225.83;3613.28
+712;402;PC-004;Bico de injeção (unidade);24;901.89;21645.36
+713;403;EM-004;Palete PBR;24;67.79;1626.96
+714;403;EM-001;Caixa de papelão 40x30x30 (pacote 50);1;176.77;176.77
+715;405;PC-005;Óleo hidráulico ISO 68 (balde 20 L);6;549.23;3295.38
+716;405;PC-005;Óleo hidráulico ISO 68 (balde 20 L);16;490.05;7840.80
+717;405;PC-005;Óleo hidráulico ISO 68 (balde 20 L);16;459.43;7350.88
+718;405;PC-005;Óleo hidráulico ISO 68 (balde 20 L);24;566.55;13597.20
+719;407;EP-001;Luva de vaqueta (par);1;19.89;19.89
+720;407;EP-001;Luva de vaqueta (par);1;16.34;16.34
+721;407;EP-002;Protetor auricular tipo plug (caixa 100);1;91.49;91.49
+722;407;EP-001;Luva de vaqueta (par);24;17.18;412.32
+723;408;EP-001;Luva de vaqueta (par);24;19.84;476.16
+724;408;EP-001;Luva de vaqueta (par);6;20.26;121.56
+725;410;EM-004;Palete PBR;10;66.76;667.60
+726;410;EM-004;Palete PBR;2;62.36;124.72
+727;410;EM-004;Palete PBR;6;58.41;350.46
+728;411;PC-005;Óleo hidráulico ISO 68 (balde 20 L);6;503.99;3023.94
+729;411;PC-005;Óleo hidráulico ISO 68 (balde 20 L);10;509.08;5090.80
+730;411;PC-005;Óleo hidráulico ISO 68 (balde 20 L);4;515.13;2060.52
+731;412;PC-003;Válvula direcional hidráulica;1;1898.80;1898.80
+732;412;PC-003;Válvula direcional hidráulica;1;2012.60;2012.60
+733;412;PC-003;Válvula direcional hidráulica;1;2170.54;2170.54
+734;412;PC-003;Válvula direcional hidráulica;2;2139.67;4279.34
+735;413;SV-001;Calibração de paquímetro;10;78.77;787.70
+736;413;SV-001;Calibração de paquímetro;4;96.64;386.56
+737;414;SV-003;Frete dedicado regional;1;1412.79;1412.79
+738;414;SV-003;Frete dedicado regional;1;1264.74;1264.74
+739;415;SV-004;Limpeza industrial mensal;1;4350.33;4350.33
+740;415;SV-004;Limpeza industrial mensal;1;3632.80;3632.80
+741;415;SV-004;Limpeza industrial mensal;1;4783.93;4783.93
+742;416;SV-004;Limpeza industrial mensal;1;4179.73;4179.73
+743;416;SV-004;Limpeza industrial mensal;1;4183.22;4183.22
+744;417;EP-002;Protetor auricular tipo plug (caixa 100);16;86.25;1380.00
+745;417;EP-001;Luva de vaqueta (par);10;16.83;168.30
+746;417;EP-002;Protetor auricular tipo plug (caixa 100);2;88.78;177.56
+747;417;EP-002;Protetor auricular tipo plug (caixa 100);1;103.96;103.96
+748;419;PC-003;Válvula direcional hidráulica;2;1865.20;3730.40
+749;420;PC-003;Válvula direcional hidráulica;2;1617.47;3234.94
+750;421;EM-002;Saco plástico 60x80 (milheiro);24;277.67;6664.08
+751;421;EM-003;Etiqueta térmica 100x50 (rolo 1000);6;50.73;304.38
+752;421;EM-003;Etiqueta térmica 100x50 (rolo 1000);6;47.91;287.46
+753;421;EM-002;Saco plástico 60x80 (milheiro);1;222.45;222.45
+754;422;SV-002;Manutenção corretiva de molde (hora);6;227.26;1363.56
+755;422;SV-002;Manutenção corretiva de molde (hora);10;204.68;2046.80
+756;423;MP-002;Polietileno de alta densidade (saco 25 kg);1;268.48;268.48
+757;423;MP-003;ABS natural (saco 25 kg);10;451.83;4518.30
+758;423;MP-002;Polietileno de alta densidade (saco 25 kg);1;298.75;298.75
+759;424;PC-005;Óleo hidráulico ISO 68 (balde 20 L);10;458.81;4588.10
+760;424;PC-005;Óleo hidráulico ISO 68 (balde 20 L);1;543.41;543.41
+761;424;PC-005;Óleo hidráulico ISO 68 (balde 20 L);24;514.01;12336.24
+762;425;SV-003;Frete dedicado regional;2;1502.38;3004.76
+763;425;SV-003;Frete dedicado regional;2;1417.24;2834.48
+764;425;SV-003;Frete dedicado regional;1;1153.70;1153.70
+765;425;SV-003;Frete dedicado regional;2;1312.40;2624.80
+766;426;EM-004;Palete PBR;6;75.23;451.38
+767;427;SV-003;Frete dedicado regional;1;1422.80;1422.80
+768;427;SV-003;Frete dedicado regional;2;1156.52;2313.04
+769;427;SV-003;Frete dedicado regional;1;1302.59;1302.59
+770;427;SV-003;Frete dedicado regional;1;1527.63;1527.63
+771;428;MP-001;Polipropileno homopolímero (saco 25 kg);1;309.57;309.57
+772;428;MP-001;Polipropileno homopolímero (saco 25 kg);6;260.07;1560.42
+773;428;MP-001;Polipropileno homopolímero (saco 25 kg);6;269.81;1618.86
+774;428;MP-001;Polipropileno homopolímero (saco 25 kg);4;314.05;1256.20
+775;429;SV-004;Limpeza industrial mensal;1;3594.97;3594.97
+776;429;SV-004;Limpeza industrial mensal;1;4373.68;4373.68
+777;429;SV-004;Limpeza industrial mensal;2;4201.68;8403.36
+778;429;SV-004;Limpeza industrial mensal;1;4766.85;4766.85
+779;430;SV-001;Calibração de paquímetro;4;96.12;384.48
+780;430;SV-001;Calibração de paquímetro;6;96.71;580.26
+781;430;SV-001;Calibração de paquímetro;24;81.14;1947.36
+782;432;SV-004;Limpeza industrial mensal;1;4732.57;4732.57
+783;432;SV-004;Limpeza industrial mensal;1;3981.13;3981.13
+784;432;SV-004;Limpeza industrial mensal;1;4438.11;4438.11
+785;433;EM-004;Palete PBR;1;77.31;77.31
+786;433;EM-004;Palete PBR;6;58.39;350.34
+787;434;MP-001;Polipropileno homopolímero (saco 25 kg);4;286.81;1147.24
+788;434;MP-001;Polipropileno homopolímero (saco 25 kg);1;303.14;303.14
+789;434;MP-001;Polipropileno homopolímero (saco 25 kg);2;267.61;535.22
+790;436;EP-003;Óculos de segurança incolor;16;14.52;232.32
+791;436;EP-004;Uniforme operacional (conjunto);1;136.83;136.83
+792;437;SV-003;Frete dedicado regional;1;1205.88;1205.88
+793;437;SV-003;Frete dedicado regional;1;1398.33;1398.33
+794;437;SV-003;Frete dedicado regional;2;1482.39;2964.78
+795;437;SV-003;Frete dedicado regional;2;1203.68;2407.36
+796;440;SV-003;Frete dedicado regional;1;1253.00;1253.00
+797;440;SV-003;Frete dedicado regional;2;1370.91;2741.82
+798;440;SV-003;Frete dedicado regional;1;1180.04;1180.04
+799;440;SV-003;Frete dedicado regional;1;1542.50;1542.50
+800;441;SV-004;Limpeza industrial mensal;2;3831.14;7662.28
+801;441;SV-004;Limpeza industrial mensal;1;4290.79;4290.79
+802;441;SV-004;Limpeza industrial mensal;2;3570.19;7140.38
+803;443;MP-002;Polietileno de alta densidade (saco 25 kg);2;279.02;558.04
+804;443;MP-003;ABS natural (saco 25 kg);10;441.82;4418.20
+805;443;MP-002;Polietileno de alta densidade (saco 25 kg);1;282.46;282.46
+806;444;SV-004;Limpeza industrial mensal;2;3942.06;7884.12
+807;444;SV-004;Limpeza industrial mensal;1;4421.04;4421.04
+808;444;SV-004;Limpeza industrial mensal;1;4228.90;4228.90
+809;445;MP-001;Polipropileno homopolímero (saco 25 kg);2;244.63;489.26
+810;445;MP-001;Polipropileno homopolímero (saco 25 kg);16;254.13;4066.08
+811;446;MP-004;Masterbatch branco (saco 25 kg);2;587.78;1175.56
+812;446;MP-004;Masterbatch branco (saco 25 kg);6;686.28;4117.68
+813;447;MP-003;ABS natural (saco 25 kg);10;450.58;4505.80
+814;448;PC-005;Óleo hidráulico ISO 68 (balde 20 L);1;528.40;528.40
+815;448;PC-005;Óleo hidráulico ISO 68 (balde 20 L);24;500.82;12019.68
+816;449;EP-003;Óculos de segurança incolor;4;14.18;56.72
+817;449;EP-003;Óculos de segurança incolor;6;13.03;78.18
+818;449;EP-003;Óculos de segurança incolor;10;11.82;118.20
+819;449;EP-004;Uniforme operacional (conjunto);16;137.12;2193.92
+820;450;EM-001;Caixa de papelão 40x30x30 (pacote 50);10;181.83;1818.30
+821;451;EM-002;Saco plástico 60x80 (milheiro);16;215.46;3447.36
+822;454;PC-005;Óleo hidráulico ISO 68 (balde 20 L);10;524.98;5249.80
+823;454;PC-005;Óleo hidráulico ISO 68 (balde 20 L);24;450.44;10810.56
+824;454;PC-005;Óleo hidráulico ISO 68 (balde 20 L);10;561.31;5613.10
+825;454;PC-005;Óleo hidráulico ISO 68 (balde 20 L);16;450.17;7202.72
+826;456;EM-001;Caixa de papelão 40x30x30 (pacote 50);1;166.00;166.00
+827;457;SV-004;Limpeza industrial mensal;2;4581.32;9162.64
+828;457;SV-004;Limpeza industrial mensal;1;4458.79;4458.79
+829;458;EP-001;Luva de vaqueta (par);24;21.09;506.16
+830;458;EP-002;Protetor auricular tipo plug (caixa 100);24;97.19;2332.56
+831;458;EP-001;Luva de vaqueta (par);6;20.73;124.38
+832;458;EP-002;Protetor auricular tipo plug (caixa 100);2;97.58;195.16
+833;459;MP-001;Polipropileno homopolímero (saco 25 kg);4;244.92;979.68
+834;459;MP-001;Polipropileno homopolímero (saco 25 kg);10;314.90;3149.00
+835;460;SV-003;Frete dedicado regional;1;1372.25;1372.25
+836;460;SV-003;Frete dedicado regional;2;1522.37;3044.74
+837;461;PC-005;Óleo hidráulico ISO 68 (balde 20 L);24;523.88;12573.12
+838;462;SV-002;Manutenção corretiva de molde (hora);4;191.37;765.48
+839;462;PC-004;Bico de injeção (unidade);4;1035.62;4142.48
+840;462;SV-002;Manutenção corretiva de molde (hora);1;238.21;238.21
+841;462;PC-004;Bico de injeção (unidade);16;888.45;14215.20
+842;463;SV-004;Limpeza industrial mensal;1;4745.73;4745.73
+843;463;SV-004;Limpeza industrial mensal;1;3609.53;3609.53
+844;463;SV-004;Limpeza industrial mensal;1;4564.68;4564.68
+845;463;SV-004;Limpeza industrial mensal;1;3824.12;3824.12
+846;464;SV-004;Limpeza industrial mensal;2;3760.08;7520.16
+847;464;SV-004;Limpeza industrial mensal;1;3674.32;3674.32
+848;466;MP-003;ABS natural (saco 25 kg);16;401.33;6421.28
+849;466;MP-003;ABS natural (saco 25 kg);2;403.56;807.12
+850;466;MP-003;ABS natural (saco 25 kg);6;378.42;2270.52
+851;467;MP-001;Polipropileno homopolímero (saco 25 kg);1;276.22;276.22
+852;467;MP-001;Polipropileno homopolímero (saco 25 kg);1;296.44;296.44
+853;468;EM-003;Etiqueta térmica 100x50 (rolo 1000);24;45.79;1098.96
+854;468;EM-003;Etiqueta térmica 100x50 (rolo 1000);2;44.25;88.50
+855;469;EP-002;Protetor auricular tipo plug (caixa 100);10;93.70;937.00
+856;469;EP-002;Protetor auricular tipo plug (caixa 100);1;105.96;105.96
+857;469;EP-001;Luva de vaqueta (par);2;18.82;37.64
+858;472;SV-002;Manutenção corretiva de molde (hora);16;195.28;3124.48
+859;473;EP-004;Uniforme operacional (conjunto);16;143.77;2300.32
+860;473;EP-003;Óculos de segurança incolor;24;13.30;319.20
+861;473;EP-003;Óculos de segurança incolor;10;11.50;115.00
+862;474;PC-002;Termopar tipo J;10;56.45;564.50
+863;475;MP-004;Masterbatch branco (saco 25 kg);6;648.57;3891.42
+864;477;PC-005;Óleo hidráulico ISO 68 (balde 20 L);4;556.51;2226.04
+865;477;PC-005;Óleo hidráulico ISO 68 (balde 20 L);16;567.28;9076.48
+866;478;EM-003;Etiqueta térmica 100x50 (rolo 1000);1;50.09;50.09
+867;478;EM-002;Saco plástico 60x80 (milheiro);4;212.60;850.40
+868;478;EM-003;Etiqueta térmica 100x50 (rolo 1000);4;44.72;178.88
+869;478;EM-002;Saco plástico 60x80 (milheiro);4;209.28;837.12
+870;479;EP-001;Luva de vaqueta (par);4;16.11;64.44
+871;479;EP-001;Luva de vaqueta (par);1;17.15;17.15
+872;481;EP-002;Protetor auricular tipo plug (caixa 100);24;86.09;2066.16
+873;481;EP-001;Luva de vaqueta (par);16;21.05;336.80
+874;482;EM-003;Etiqueta térmica 100x50 (rolo 1000);4;53.93;215.72
+875;482;EM-003;Etiqueta térmica 100x50 (rolo 1000);24;51.80;1243.20
+876;483;PC-004;Bico de injeção (unidade);1;950.55;950.55
+877;484;EM-003;Etiqueta térmica 100x50 (rolo 1000);10;49.90;499.00
+878;484;EM-003;Etiqueta térmica 100x50 (rolo 1000);4;54.38;217.52
+879;484;EM-003;Etiqueta térmica 100x50 (rolo 1000);16;48.63;778.08
+880;485;SV-004;Limpeza industrial mensal;2;4106.84;8213.68
+881;486;TI-002;Coletor de dados com leitor;1;3816.29;3816.29
+882;487;PC-001;Resistência de cartucho 400 W;10;125.46;1254.60
+883;488;SV-001;Calibração de paquímetro;6;96.86;581.16
+884;488;SV-001;Calibração de paquímetro;4;75.74;302.96
+885;488;SV-001;Calibração de paquímetro;24;72.47;1739.28
+886;488;SV-001;Calibração de paquímetro;1;94.09;94.09
+887;489;EM-003;Etiqueta térmica 100x50 (rolo 1000);16;46.73;747.68
+888;489;EM-002;Saco plástico 60x80 (milheiro);2;268.00;536.00
+889;489;EM-002;Saco plástico 60x80 (milheiro);10;281.70;2817.00
+890;491;MP-004;Masterbatch branco (saco 25 kg);4;718.33;2873.32
+891;491;MP-004;Masterbatch branco (saco 25 kg);16;615.06;9840.96
+892;491;MP-005;Masterbatch preto (saco 25 kg);10;353.56;3535.60
+893;491;MP-005;Masterbatch preto (saco 25 kg);4;417.03;1668.12
+894;492;EP-003;Óculos de segurança incolor;24;14.34;344.16
+895;492;EP-004;Uniforme operacional (conjunto);10;136.25;1362.50
+896;492;EP-004;Uniforme operacional (conjunto);24;147.45;3538.80
+897;493;EP-004;Uniforme operacional (conjunto);10;127.36;1273.60
+898;493;EP-003;Óculos de segurança incolor;2;11.58;23.16
+899;493;EP-003;Óculos de segurança incolor;6;11.90;71.40
+900;493;EP-003;Óculos de segurança incolor;16;11.35;181.60
+901;494;EM-001;Caixa de papelão 40x30x30 (pacote 50);1;167.47;167.47
+902;494;EM-004;Palete PBR;4;68.99;275.96
+903;498;PC-004;Bico de injeção (unidade);10;827.40;8274.00
+904;499;EM-004;Palete PBR;24;59.43;1426.32
+905;501;MP-001;Polipropileno homopolímero (saco 25 kg);2;291.89;583.78
+906;501;MP-001;Polipropileno homopolímero (saco 25 kg);6;321.52;1929.12
+907;501;MP-001;Polipropileno homopolímero (saco 25 kg);24;262.93;6310.32
+908;501;MP-001;Polipropileno homopolímero (saco 25 kg);1;272.88;272.88
+909;502;PC-002;Termopar tipo J;24;50.37;1208.88
+910;502;PC-001;Resistência de cartucho 400 W;2;145.16;290.32
+911;502;PC-002;Termopar tipo J;16;58.48;935.68
+912;504;EP-002;Protetor auricular tipo plug (caixa 100);1;90.62;90.62
+913;508;SV-001;Calibração de paquímetro;4;88.60;354.40
+914;508;SV-001;Calibração de paquímetro;6;73.17;439.02
+915;509;EM-004;Palete PBR;6;70.01;420.06
+916;509;EM-001;Caixa de papelão 40x30x30 (pacote 50);24;165.51;3972.24
+917;510;SV-003;Frete dedicado regional;1;1469.43;1469.43
+918;510;SV-003;Frete dedicado regional;2;1472.83;2945.66
+919;510;SV-003;Frete dedicado regional;1;1337.09;1337.09
+920;511;TI-001;Notebook corporativo;1;5150.06;5150.06
+921;512;EM-003;Etiqueta térmica 100x50 (rolo 1000);2;59.55;119.10
+922;512;EM-003;Etiqueta térmica 100x50 (rolo 1000);6;53.03;318.18
+923;512;EM-003;Etiqueta térmica 100x50 (rolo 1000);6;52.66;315.96
+924;513;EM-001;Caixa de papelão 40x30x30 (pacote 50);10;173.65;1736.50
+925;513;EM-004;Palete PBR;10;62.78;627.80
+926;513;EM-004;Palete PBR;16;75.65;1210.40
+927;514;EP-003;Óculos de segurança incolor;16;13.60;217.60
+928;514;EP-003;Óculos de segurança incolor;6;11.94;71.64
+929;514;EP-004;Uniforme operacional (conjunto);24;141.92;3406.08
+930;515;SV-003;Frete dedicado regional;2;1273.82;2547.64
+931;515;SV-003;Frete dedicado regional;1;1350.64;1350.64
+932;515;SV-003;Frete dedicado regional;1;1240.26;1240.26
+933;516;EM-002;Saco plástico 60x80 (milheiro);1;209.24;209.24
+934;516;EM-003;Etiqueta térmica 100x50 (rolo 1000);10;49.61;496.10
+935;517;SV-004;Limpeza industrial mensal;2;4224.39;8448.78
+936;517;SV-004;Limpeza industrial mensal;1;4823.71;4823.71
+937;518;PC-001;Resistência de cartucho 400 W;4;134.03;536.12
+938;519;PC-003;Válvula direcional hidráulica;1;1952.29;1952.29
+939;521;SV-004;Limpeza industrial mensal;1;3894.55;3894.55
+940;521;SV-004;Limpeza industrial mensal;2;4187.42;8374.84
+941;522;PC-004;Bico de injeção (unidade);10;871.87;8718.70
+942;522;SV-002;Manutenção corretiva de molde (hora);24;195.27;4686.48
+943;523;EM-001;Caixa de papelão 40x30x30 (pacote 50);6;169.59;1017.54
+944;524;SV-002;Manutenção corretiva de molde (hora);24;211.40;5073.60
+945;524;PC-004;Bico de injeção (unidade);24;948.72;22769.28
+946;525;EP-003;Óculos de segurança incolor;6;13.30;79.80
+947;526;MP-005;Masterbatch preto (saco 25 kg);4;385.16;1540.64
+948;526;MP-004;Masterbatch branco (saco 25 kg);6;671.54;4029.24
+949;526;MP-005;Masterbatch preto (saco 25 kg);4;355.73;1422.92
+950;528;EM-003;Etiqueta térmica 100x50 (rolo 1000);24;57.83;1387.92
+951;528;EM-002;Saco plástico 60x80 (milheiro);4;276.93;1107.72
+952;528;EM-002;Saco plástico 60x80 (milheiro);6;216.23;1297.38
+953;529;SV-004;Limpeza industrial mensal;1;4356.98;4356.98
+954;529;SV-004;Limpeza industrial mensal;2;4253.67;8507.34
+955;529;SV-004;Limpeza industrial mensal;1;3686.50;3686.50
+956;530;SV-004;Limpeza industrial mensal;1;4239.08;4239.08
+957;531;PC-001;Resistência de cartucho 400 W;16;152.68;2442.88
+958;531;PC-002;Termopar tipo J;10;55.84;558.40
+959;531;PC-002;Termopar tipo J;2;52.22;104.44
+960;534;PC-005;Óleo hidráulico ISO 68 (balde 20 L);1;534.31;534.31
+961;537;PC-002;Termopar tipo J;24;55.31;1327.44
+962;537;PC-002;Termopar tipo J;16;58.88;942.08
+963;537;PC-002;Termopar tipo J;10;59.36;593.60
+964;538;MP-005;Masterbatch preto (saco 25 kg);4;414.83;1659.32
+965;540;TI-003;Licença anual de antivírus (usuário);16;89.88;1438.08
+966;540;TI-002;Coletor de dados com leitor;1;3165.70;3165.70
+967;540;TI-003;Licença anual de antivírus (usuário);24;80.86;1940.64
+968;543;TI-001;Notebook corporativo;1;5103.12;5103.12
+969;543;TI-002;Coletor de dados com leitor;1;3615.85;3615.85
+970;543;TI-001;Notebook corporativo;1;5257.71;5257.71
+971;544;MP-001;Polipropileno homopolímero (saco 25 kg);6;260.75;1564.50
+972;544;MP-001;Polipropileno homopolímero (saco 25 kg);16;297.33;4757.28
+973;544;MP-001;Polipropileno homopolímero (saco 25 kg);24;313.47;7523.28
+974;544;MP-001;Polipropileno homopolímero (saco 25 kg);24;310.40;7449.60
+975;545;EM-002;Saco plástico 60x80 (milheiro);1;262.31;262.31
+976;545;EM-002;Saco plástico 60x80 (milheiro);6;217.01;1302.06
+977;545;EM-003;Etiqueta térmica 100x50 (rolo 1000);10;45.10;451.00
+978;547;MP-001;Polipropileno homopolímero (saco 25 kg);4;297.43;1189.72
+979;547;MP-001;Polipropileno homopolímero (saco 25 kg);4;259.51;1038.04
+980;547;MP-001;Polipropileno homopolímero (saco 25 kg);2;258.02;516.04
+981;547;MP-001;Polipropileno homopolímero (saco 25 kg);6;259.48;1556.88
+982;549;PC-003;Válvula direcional hidráulica;1;1695.43;1695.43
+983;549;PC-003;Válvula direcional hidráulica;1;2083.28;2083.28
+984;552;SV-004;Limpeza industrial mensal;2;4024.47;8048.94
+985;554;PC-004;Bico de injeção (unidade);1;841.43;841.43
+986;554;SV-002;Manutenção corretiva de molde (hora);10;237.81;2378.10
+987;555;SV-004;Limpeza industrial mensal;1;3892.97;3892.97
+988;555;SV-004;Limpeza industrial mensal;1;4796.15;4796.15
+989;556;EM-003;Etiqueta térmica 100x50 (rolo 1000);24;45.41;1089.84
+990;558;PC-005;Óleo hidráulico ISO 68 (balde 20 L);6;559.67;3358.02
+991;559;EP-003;Óculos de segurança incolor;4;11.67;46.68
+992;560;PC-001;Resistência de cartucho 400 W;16;124.30;1988.80
+993;560;PC-001;Resistência de cartucho 400 W;16;135.36;2165.76
+994;560;PC-001;Resistência de cartucho 400 W;1;151.86;151.86
+995;560;PC-002;Termopar tipo J;6;51.02;306.12
+996;561;MP-003;ABS natural (saco 25 kg);4;460.61;1842.44
+997;561;MP-003;ABS natural (saco 25 kg);2;376.76;753.52
+998;561;MP-002;Polietileno de alta densidade (saco 25 kg);6;276.96;1661.76
+999;561;MP-002;Polietileno de alta densidade (saco 25 kg);24;253.37;6080.88
+1000;562;PC-001;Resistência de cartucho 400 W;6;160.37;962.22
+1001;562;PC-001;Resistência de cartucho 400 W;6;150.28;901.68
+1002;562;PC-002;Termopar tipo J;16;57.88;926.08
+1003;562;PC-001;Resistência de cartucho 400 W;1;152.27;152.27
+1004;563;PC-004;Bico de injeção (unidade);4;1031.73;4126.92
+1005;563;SV-002;Manutenção corretiva de molde (hora);2;225.90;451.80
+1006;566;TI-002;Coletor de dados com leitor;1;3621.29;3621.29
+1007;566;TI-003;Licença anual de antivírus (usuário);2;86.97;173.94
+1008;567;EM-003;Etiqueta térmica 100x50 (rolo 1000);2;58.07;116.14
+1009;568;PC-004;Bico de injeção (unidade);16;984.36;15749.76
+1010;568;PC-004;Bico de injeção (unidade);6;914.62;5487.72
+1011;569;PC-005;Óleo hidráulico ISO 68 (balde 20 L);1;490.93;490.93
+1012;569;PC-005;Óleo hidráulico ISO 68 (balde 20 L);4;441.45;1765.80
+1013;569;PC-005;Óleo hidráulico ISO 68 (balde 20 L);10;563.13;5631.30
+1014;570;TI-003;Licença anual de antivírus (usuário);16;84.11;1345.76
+1015;570;TI-001;Notebook corporativo;2;6460.49;12920.98
+1016;571;EM-002;Saco plástico 60x80 (milheiro);24;228.66;5487.84
+1017;571;EM-002;Saco plástico 60x80 (milheiro);2;227.52;455.04
+1018;572;PC-004;Bico de injeção (unidade);6;836.93;5021.58
+1019;572;PC-004;Bico de injeção (unidade);2;1030.61;2061.22
+1020;573;SV-004;Limpeza industrial mensal;1;3737.44;3737.44
+1021;573;SV-004;Limpeza industrial mensal;2;4612.51;9225.02
+1022;574;MP-004;Masterbatch branco (saco 25 kg);6;610.15;3660.90
+1023;577;MP-002;Polietileno de alta densidade (saco 25 kg);16;233.93;3742.88
+1024;577;MP-003;ABS natural (saco 25 kg);16;433.53;6936.48
+1025;577;MP-002;Polietileno de alta densidade (saco 25 kg);2;262.82;525.64
+1026;577;MP-003;ABS natural (saco 25 kg);24;456.34;10952.16
+1027;579;EP-002;Protetor auricular tipo plug (caixa 100);1;106.88;106.88
+1028;579;EP-002;Protetor auricular tipo plug (caixa 100);24;107.27;2574.48
+1029;580;EM-001;Caixa de papelão 40x30x30 (pacote 50);4;214.94;859.76
+1030;580;EM-004;Palete PBR;24;77.78;1866.72
+1031;581;PC-003;Válvula direcional hidráulica;1;2131.85;2131.85
+1032;581;PC-003;Válvula direcional hidráulica;2;1868.69;3737.38
+1033;581;PC-003;Válvula direcional hidráulica;1;1763.34;1763.34
+1034;581;PC-003;Válvula direcional hidráulica;2;1842.74;3685.48
+1035;583;SV-002;Manutenção corretiva de molde (hora);10;244.83;2448.30
+1036;583;PC-004;Bico de injeção (unidade);24;1093.30;26239.20
+1037;583;SV-002;Manutenção corretiva de molde (hora);4;227.18;908.72
+1038;584;EM-002;Saco plástico 60x80 (milheiro);2;280.95;561.90
+1039;584;EM-002;Saco plástico 60x80 (milheiro);10;214.55;2145.50
+1040;584;EM-003;Etiqueta térmica 100x50 (rolo 1000);16;46.53;744.48
+1041;584;EM-002;Saco plástico 60x80 (milheiro);1;244.10;244.10
+1042;586;PC-003;Válvula direcional hidráulica;1;2099.75;2099.75
+1043;586;PC-003;Válvula direcional hidráulica;2;1819.95;3639.90
+1044;586;PC-003;Válvula direcional hidráulica;2;2148.13;4296.26
+1045;587;SV-004;Limpeza industrial mensal;1;4614.59;4614.59
+1046;588;PC-001;Resistência de cartucho 400 W;16;129.97;2079.52
+1047;588;PC-002;Termopar tipo J;4;62.60;250.40
+1048;588;PC-001;Resistência de cartucho 400 W;2;134.97;269.94
+1049;589;SV-003;Frete dedicado regional;1;1373.05;1373.05
+1050;589;SV-003;Frete dedicado regional;1;1266.30;1266.30
+1051;589;SV-003;Frete dedicado regional;2;1354.05;2708.10
+1052;589;SV-003;Frete dedicado regional;1;1433.40;1433.40
+1053;590;EP-002;Protetor auricular tipo plug (caixa 100);2;104.42;208.84
+1054;590;EP-002;Protetor auricular tipo plug (caixa 100);10;84.96;849.60
+1055;590;EP-001;Luva de vaqueta (par);1;16.00;16.00
+1056;591;SV-004;Limpeza industrial mensal;2;4115.39;8230.78
+1057;592;SV-002;Manutenção corretiva de molde (hora);2;191.34;382.68
+1058;592;SV-002;Manutenção corretiva de molde (hora);1;214.61;214.61
+1059;593;PC-003;Válvula direcional hidráulica;2;1826.43;3652.86
+1060;593;PC-003;Válvula direcional hidráulica;1;1839.59;1839.59
+1061;593;PC-003;Válvula direcional hidráulica;1;1697.53;1697.53
+1062;593;PC-003;Válvula direcional hidráulica;1;1671.61;1671.61
+1063;594;EM-001;Caixa de papelão 40x30x30 (pacote 50);4;195.21;780.84
+1064;594;EM-001;Caixa de papelão 40x30x30 (pacote 50);10;190.29;1902.90
+1065;594;EM-001;Caixa de papelão 40x30x30 (pacote 50);16;187.30;2996.80
+1066;595;PC-005;Óleo hidráulico ISO 68 (balde 20 L);24;496.28;11910.72
+1067;595;PC-005;Óleo hidráulico ISO 68 (balde 20 L);24;527.68;12664.32
+1068;595;PC-005;Óleo hidráulico ISO 68 (balde 20 L);4;527.94;2111.76
+1069;595;PC-005;Óleo hidráulico ISO 68 (balde 20 L);10;519.46;5194.60
+1070;596;SV-004;Limpeza industrial mensal;2;4754.95;9509.90
+1071;596;SV-004;Limpeza industrial mensal;1;3704.12;3704.12
+1072;598;MP-001;Polipropileno homopolímero (saco 25 kg);16;307.42;4918.72
+1073;598;MP-001;Polipropileno homopolímero (saco 25 kg);1;286.77;286.77
+1074;600;SV-002;Manutenção corretiva de molde (hora);4;218.23;872.92
+1075;600;SV-002;Manutenção corretiva de molde (hora);4;242.49;969.96
+1076;601;EP-002;Protetor auricular tipo plug (caixa 100);1;99.26;99.26
+1077;601;EP-001;Luva de vaqueta (par);4;21.14;84.56
+1078;601;EP-001;Luva de vaqueta (par);6;16.91;101.46
+1079;601;EP-002;Protetor auricular tipo plug (caixa 100);6;94.69;568.14
+1080;602;SV-001;Calibração de paquímetro;4;81.97;327.88
+1081;602;SV-001;Calibração de paquímetro;2;95.77;191.54
+1082;603;EP-002;Protetor auricular tipo plug (caixa 100);1;81.70;81.70
+1083;603;EP-001;Luva de vaqueta (par);2;16.70;33.40
+1084;604;MP-002;Polietileno de alta densidade (saco 25 kg);2;282.40;564.80
+1085;604;MP-002;Polietileno de alta densidade (saco 25 kg);1;295.31;295.31
+1086;604;MP-002;Polietileno de alta densidade (saco 25 kg);1;278.30;278.30
+1087;604;MP-003;ABS natural (saco 25 kg);10;419.28;4192.80
+1088;606;EM-001;Caixa de papelão 40x30x30 (pacote 50);2;209.95;419.90
+1089;606;EM-004;Palete PBR;4;60.72;242.88
+1090;606;EM-004;Palete PBR;1;73.33;73.33
+1091;607;SV-003;Frete dedicado regional;1;1487.24;1487.24
+1092;607;SV-003;Frete dedicado regional;1;1282.66;1282.66
+1093;607;SV-003;Frete dedicado regional;1;1372.25;1372.25
+1094;607;SV-003;Frete dedicado regional;1;1437.42;1437.42
+1095;608;MP-003;ABS natural (saco 25 kg);16;471.00;7536.00
+1096;609;PC-004;Bico de injeção (unidade);16;991.86;15869.76
+1097;609;PC-004;Bico de injeção (unidade);6;931.51;5589.06
+1098;609;PC-004;Bico de injeção (unidade);16;896.88;14350.08
+1099;609;PC-004;Bico de injeção (unidade);24;900.48;21611.52
+1100;610;PC-001;Resistência de cartucho 400 W;1;145.26;145.26
+1101;613;EP-001;Luva de vaqueta (par);24;18.66;447.84
+1102;613;EP-002;Protetor auricular tipo plug (caixa 100);10;98.24;982.40
+1103;613;EP-001;Luva de vaqueta (par);4;18.42;73.68
+1104;613;EP-002;Protetor auricular tipo plug (caixa 100);6;94.76;568.56
+1105;614;EM-003;Etiqueta térmica 100x50 (rolo 1000);1;55.33;55.33
+1106;614;EM-002;Saco plástico 60x80 (milheiro);4;251.35;1005.40
+1107;614;EM-003;Etiqueta térmica 100x50 (rolo 1000);24;55.23;1325.52
+1108;615;PC-003;Válvula direcional hidráulica;1;2070.09;2070.09
+1109;616;MP-002;Polietileno de alta densidade (saco 25 kg);2;266.80;533.60
+1110;617;MP-003;ABS natural (saco 25 kg);4;387.97;1551.88
+1111;617;MP-002;Polietileno de alta densidade (saco 25 kg);24;287.78;6906.72
+1112;617;MP-002;Polietileno de alta densidade (saco 25 kg);4;229.96;919.84
+1113;618;SV-002;Manutenção corretiva de molde (hora);1;217.64;217.64
+1114;618;PC-004;Bico de injeção (unidade);6;1097.19;6583.14
+1115;618;PC-004;Bico de injeção (unidade);4;966.03;3864.12
+1116;618;PC-004;Bico de injeção (unidade);4;947.64;3790.56
+1117;620;PC-005;Óleo hidráulico ISO 68 (balde 20 L);6;431.68;2590.08
+1118;620;PC-005;Óleo hidráulico ISO 68 (balde 20 L);24;495.92;11902.08
+1119;620;PC-005;Óleo hidráulico ISO 68 (balde 20 L);4;448.94;1795.76
+1120;621;SV-001;Calibração de paquímetro;16;72.75;1164.00
+1121;621;SV-001;Calibração de paquímetro;4;80.08;320.32
+1122;622;SV-001;Calibração de paquímetro;16;89.88;1438.08
+1123;622;SV-001;Calibração de paquímetro;16;89.51;1432.16
+1124;622;SV-001;Calibração de paquímetro;10;83.02;830.20
+1125;622;SV-001;Calibração de paquímetro;4;77.77;311.08
+1126;623;MP-001;Polipropileno homopolímero (saco 25 kg);1;309.65;309.65
+1127;624;MP-004;Masterbatch branco (saco 25 kg);1;593.01;593.01
+1128;625;PC-005;Óleo hidráulico ISO 68 (balde 20 L);24;459.06;11017.44
+1129;625;PC-005;Óleo hidráulico ISO 68 (balde 20 L);2;535.12;1070.24
+1130;625;PC-005;Óleo hidráulico ISO 68 (balde 20 L);2;555.19;1110.38
+1131;626;PC-005;Óleo hidráulico ISO 68 (balde 20 L);2;508.57;1017.14
+1132;627;SV-003;Frete dedicado regional;2;1236.57;2473.14
+1133;627;SV-003;Frete dedicado regional;2;1391.79;2783.58
+1134;627;SV-003;Frete dedicado regional;1;1510.81;1510.81
+1135;627;SV-003;Frete dedicado regional;1;1549.43;1549.43
+1136;628;SV-003;Frete dedicado regional;1;1235.52;1235.52
+1137;628;SV-003;Frete dedicado regional;2;1198.60;2397.20
+1138;629;EP-001;Luva de vaqueta (par);6;16.95;101.70
+1139;630;PC-001;Resistência de cartucho 400 W;24;146.49;3515.76
+1140;630;PC-001;Resistência de cartucho 400 W;4;148.42;593.68
+1141;630;PC-001;Resistência de cartucho 400 W;24;149.40;3585.60
+1142;630;PC-002;Termopar tipo J;6;55.68;334.08
+1143;631;MP-002;Polietileno de alta densidade (saco 25 kg);1;260.93;260.93
+1144;632;PC-005;Óleo hidráulico ISO 68 (balde 20 L);2;567.01;1134.02
+1145;632;PC-005;Óleo hidráulico ISO 68 (balde 20 L);2;463.27;926.54
+1146;632;PC-005;Óleo hidráulico ISO 68 (balde 20 L);4;547.33;2189.32
+1147;633;EM-002;Saco plástico 60x80 (milheiro);16;274.99;4399.84
+1148;633;EM-002;Saco plástico 60x80 (milheiro);16;275.15;4402.40
+1149;634;MP-004;Masterbatch branco (saco 25 kg);4;606.54;2426.16
+1150;634;MP-005;Masterbatch preto (saco 25 kg);4;391.18;1564.72
+1151;635;EM-002;Saco plástico 60x80 (milheiro);2;218.06;436.12
+1152;637;PC-005;Óleo hidráulico ISO 68 (balde 20 L);1;504.98;504.98
+1153;637;PC-005;Óleo hidráulico ISO 68 (balde 20 L);4;535.09;2140.36
+1154;638;TI-001;Notebook corporativo;2;6314.14;12628.28
+1155;638;TI-003;Licença anual de antivírus (usuário);2;100.05;200.10
+1156;639;MP-002;Polietileno de alta densidade (saco 25 kg);16;292.69;4683.04
+1157;639;MP-002;Polietileno de alta densidade (saco 25 kg);2;292.50;585.00
+1158;639;MP-003;ABS natural (saco 25 kg);1;370.66;370.66
+1159;639;MP-002;Polietileno de alta densidade (saco 25 kg);6;260.84;1565.04

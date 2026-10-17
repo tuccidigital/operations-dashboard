@@ -1,0 +1,48 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "589b75edef9636d49e79",
+  "position": {
+    "x": 24,
+    "y": 12,
+    "z": 1000,
+    "width": 900,
+    "height": 56,
+    "tabOrder": 1000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Resumo de segunda-feira",
+                    "textStyle": {
+                      "fontSize": "20pt",
+                      "color": "#17191C",
+                      "fontWeight": "bold"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Mês da data de referência contra o mês anterior. Os números batem com as áreas porque vêm do mesmo modelo.",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#51565C"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

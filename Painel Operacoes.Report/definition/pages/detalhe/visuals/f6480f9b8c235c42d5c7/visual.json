@@ -1,0 +1,161 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "f6480f9b8c235c42d5c7",
+  "position": {
+    "x": 24,
+    "y": 176,
+    "z": 6000,
+    "width": 1232,
+    "height": 524,
+    "tabOrder": 6000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Solicitacoes"
+                    }
+                  },
+                  "Property": "Codigo"
+                }
+              },
+              "queryRef": "Solicitacoes.Codigo",
+              "nativeQueryRef": "Codigo"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Solicitacoes"
+                    }
+                  },
+                  "Property": "Tipo"
+                }
+              },
+              "queryRef": "Solicitacoes.Tipo",
+              "nativeQueryRef": "Tipo"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Solicitacoes"
+                    }
+                  },
+                  "Property": "Status"
+                }
+              },
+              "queryRef": "Solicitacoes.Status",
+              "nativeQueryRef": "Status"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Solicitacoes"
+                    }
+                  },
+                  "Property": "ValorTotal"
+                }
+              },
+              "queryRef": "Solicitacoes.ValorTotal",
+              "nativeQueryRef": "ValorTotal"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Solicitacoes"
+                    }
+                  },
+                  "Property": "DataCriacao"
+                }
+              },
+              "queryRef": "Solicitacoes.DataCriacao",
+              "nativeQueryRef": "DataCriacao"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Solicitacoes"
+                    }
+                  },
+                  "Property": "HorasTotais"
+                }
+              },
+              "queryRef": "Solicitacoes.HorasTotais",
+              "nativeQueryRef": "HorasTotais"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Solicitacoes"
+                    }
+                  },
+                  "Property": "Atrasada"
+                }
+              },
+              "queryRef": "Solicitacoes.Atrasada",
+              "nativeQueryRef": "Atrasada"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Solicitacoes"
+                  }
+                },
+                "Property": "DataCriacao"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": false
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Solicitações do centro de custo'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

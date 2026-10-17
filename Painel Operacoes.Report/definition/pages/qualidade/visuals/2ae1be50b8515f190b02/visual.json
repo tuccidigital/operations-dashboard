@@ -1,0 +1,78 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "2ae1be50b8515f190b02",
+  "position": {
+    "x": 24,
+    "y": 176,
+    "z": 7000,
+    "width": 400,
+    "height": 250,
+    "tabOrder": 7000
+  },
+  "visual": {
+    "visualType": "clusteredColumnChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "NaoConformidades"
+                    }
+                  },
+                  "Property": "Severidade"
+                }
+              },
+              "queryRef": "NaoConformidades.Severidade",
+              "nativeQueryRef": "Severidade",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "NCs"
+                }
+              },
+              "queryRef": "_Medidas.NCs",
+              "nativeQueryRef": "NCs"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'NCs por severidade'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

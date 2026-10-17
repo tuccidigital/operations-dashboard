@@ -1,0 +1,10 @@
+Codigo;Nome;OrcamentoMensal;GerenteId;DiretorId
+CC-100;Diretoria;45000;1;1
+CC-200;Produção;180000;3;2
+CC-210;Manutenção;95000;9;2
+CC-300;Compras;30000;4;1
+CC-400;Qualidade;40000;5;2
+CC-500;Fiscal e Financeiro;25000;6;1
+CC-600;Recursos Humanos;20000;7;1
+CC-700;Tecnologia da Informação;35000;8;1
+CC-800;Logística;60000;10;2

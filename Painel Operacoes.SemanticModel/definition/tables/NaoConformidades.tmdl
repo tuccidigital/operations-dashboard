@@ -1,0 +1,91 @@
+table NaoConformidades
+	lineageTag: 5b31f5a4-3bb7-5989-a050-f31e006c6272
+
+	column Id
+		dataType: string
+		isHidden
+		lineageTag: ab499323-8b78-5a72-9f66-c9edc2f2f9a1
+		summarizeBy: none
+		sourceColumn: Id
+
+	column InspecaoId
+		dataType: string
+		isHidden
+		lineageTag: b07c9fb5-03fb-5005-bd12-c49a0030028f
+		summarizeBy: none
+		sourceColumn: InspecaoId
+
+	column AtivoCodigo
+		dataType: string
+		isHidden
+		lineageTag: 9b83602b-478b-560c-9e74-146e2c3e44a7
+		summarizeBy: none
+		sourceColumn: AtivoCodigo
+
+	column Severidade
+		dataType: string
+		lineageTag: 352911c9-6df8-57ac-804c-032ffc4df13b
+		summarizeBy: none
+		sourceColumn: Severidade
+
+	column Estado
+		dataType: string
+		lineageTag: 8348cd82-a3d9-5fd0-ba60-7e466dfe0009
+		summarizeBy: none
+		sourceColumn: Estado
+
+	column Abertura
+		dataType: dateTime
+		formatString: dd/mm/yyyy hh:nn
+		lineageTag: 522b3d2e-9765-577d-836b-66445d730e76
+		summarizeBy: none
+		sourceColumn: Abertura
+
+	column Prazo
+		dataType: dateTime
+		formatString: dd/mm/yyyy hh:nn
+		lineageTag: 5c1fa695-a427-5548-a424-f78a72ee66dc
+		summarizeBy: none
+		sourceColumn: Prazo
+
+	column Fechamento
+		dataType: dateTime
+		formatString: dd/mm/yyyy hh:nn
+		lineageTag: 063d955c-4248-552e-a9fb-62555e8dfd0b
+		summarizeBy: none
+		sourceColumn: Fechamento
+
+	column ResponsavelId
+		dataType: string
+		isHidden
+		lineageTag: 501be878-a930-5b16-802e-3ef2c1cf0d42
+		summarizeBy: none
+		sourceColumn: ResponsavelId
+
+	column AberturaDia
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		lineageTag: aebe1c18-137d-5d3d-bf04-23f25f5382e4
+		summarizeBy: none
+		sourceColumn: AberturaDia
+		annotation UnderlyingDateTimeDataType = Date
+
+
+	column DiasParaFechar
+		dataType: double
+		formatString: 0.0
+		lineageTag: 00f47510-ce20-57b6-87de-66d01eff16be
+		summarizeBy: none
+		sourceColumn: DiasParaFechar
+
+	partition NaoConformidades = m
+		mode: import
+		source =
+				let
+				    Origem = if Fonte = "CSV" then LerCsv("nao_conformidades.csv") else error "A fonte Online entra na fase 2, com o tenant da Tucci.",
+				    Tipado = Table.TransformColumnTypes(Origem, {{"Id", type text}, {"InspecaoId", type text}, {"AtivoCodigo", type text}, {"Severidade", type text}, {"Estado", type text}, {"Abertura", type datetime}, {"Prazo", type datetime}, {"Fechamento", type datetime}, {"ResponsavelId", type text}}, "en-US"),
+				    Derivada1 = Table.AddColumn(Tipado, "AberturaDia", each Date.From([Abertura]), type date),
+				    Derivada2 = Table.AddColumn(Derivada1, "DiasParaFechar", each if [Fechamento] = null then null else Duration.TotalDays([Fechamento] - [Abertura]), type number)
+				in
+				    Derivada2
+

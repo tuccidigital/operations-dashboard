@@ -1,0 +1,92 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "d9a3f935eeb0ab678a16",
+  "position": {
+    "x": 24,
+    "y": 436,
+    "z": 11000,
+    "width": 1232,
+    "height": 264,
+    "tabOrder": 11000
+  },
+  "visual": {
+    "visualType": "clusteredColumnChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Data"
+                    }
+                  },
+                  "Property": "Mes"
+                }
+              },
+              "queryRef": "Data.Mes",
+              "nativeQueryRef": "Mes",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Valor aprovado"
+                }
+              },
+              "queryRef": "_Medidas.Valor aprovado",
+              "nativeQueryRef": "Valor aprovado"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Orçamento"
+                }
+              },
+              "queryRef": "_Medidas.Orçamento",
+              "nativeQueryRef": "Orçamento"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Valor aprovado e orçamento por mês'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

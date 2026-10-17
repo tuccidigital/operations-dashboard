@@ -1,0 +1,78 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "4e7de7643a71073f3d88",
+  "position": {
+    "x": 24,
+    "y": 164,
+    "z": 8000,
+    "width": 400,
+    "height": 260,
+    "tabOrder": 8000
+  },
+  "visual": {
+    "visualType": "funnel",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Solicitacoes"
+                    }
+                  },
+                  "Property": "Status"
+                }
+              },
+              "queryRef": "Solicitacoes.Status",
+              "nativeQueryRef": "Status",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Solicitações"
+                }
+              },
+              "queryRef": "_Medidas.Solicitações",
+              "nativeQueryRef": "Solicitações"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Solicitações por estado'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

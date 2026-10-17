@@ -1,0 +1,119 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "8adebc2430ee366a3f2e",
+  "position": {
+    "x": 652,
+    "y": 480,
+    "z": 18000,
+    "width": 604,
+    "height": 220,
+    "tabOrder": 18000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Fornecedor"
+                    }
+                  },
+                  "Property": "Nome"
+                }
+              },
+              "queryRef": "Fornecedor.Nome",
+              "nativeQueryRef": "Nome"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Notas divergentes"
+                }
+              },
+              "queryRef": "_Medidas.Notas divergentes",
+              "nativeQueryRef": "Notas divergentes"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Valor divergente"
+                }
+              },
+              "queryRef": "_Medidas.Valor divergente",
+              "nativeQueryRef": "Valor divergente"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Notas sem pedido"
+                }
+              },
+              "queryRef": "_Medidas.Notas sem pedido",
+              "nativeQueryRef": "Notas sem pedido"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Medidas"
+                  }
+                },
+                "Property": "Valor divergente"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": false
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Fornecedores com divergência'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

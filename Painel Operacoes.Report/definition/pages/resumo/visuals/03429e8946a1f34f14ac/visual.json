@@ -1,0 +1,74 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "03429e8946a1f34f14ac",
+  "position": {
+    "x": 230,
+    "y": 80,
+    "z": 5000,
+    "width": 196,
+    "height": 92,
+    "tabOrder": 5000
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Tempo médio de aprovação (h) · mês"
+                }
+              },
+              "queryRef": "_Medidas.Tempo médio de aprovação (h) · mês",
+              "nativeQueryRef": "Tempo médio de aprovação (h) · mês"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "categoryLabels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Tempo de aprovação (h)'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

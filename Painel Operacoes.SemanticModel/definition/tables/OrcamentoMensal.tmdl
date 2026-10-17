@@ -1,0 +1,35 @@
+table OrcamentoMensal
+	lineageTag: 9387892d-7b49-5560-960c-7ecc79c93de7
+
+	column CentroCusto
+		dataType: string
+		isHidden
+		lineageTag: a0bbfd98-65a0-5c8a-92ae-2ae86bafd808
+		summarizeBy: none
+		sourceColumn: CentroCusto
+
+	column Mes
+		dataType: dateTime
+		formatString: mmm/yyyy
+		lineageTag: dfeebf0c-9e92-5a3d-932e-af6a3415c196
+		summarizeBy: none
+		sourceColumn: Mes
+		annotation UnderlyingDateTimeDataType = Date
+
+
+	column Valor
+		dataType: decimal
+		formatString: \R$ #,0.00;-\R$ #,0.00;\R$ #,0.00
+		lineageTag: 33202534-8c5b-546b-a854-f51a9b548717
+		summarizeBy: sum
+		sourceColumn: Valor
+
+	partition OrcamentoMensal = m
+		mode: import
+		source =
+				let
+				    Origem = if Fonte = "CSV" then LerCsv("orcamento_mensal.csv") else error "A fonte Online entra na fase 2, com o tenant da Tucci.",
+				    Tipado = Table.TransformColumnTypes(Origem, {{"CentroCusto", type text}, {"Mes", type date}, {"Valor", Currency.Type}}, "en-US")
+				in
+				    Tipado
+

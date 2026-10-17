@@ -1,0 +1,4 @@
+Faixa;ValorMinimo;ValorMaximo;Etapa1;Etapa2
+Até R$ 5.000;0.00;5000.00;Gestor direto;
+De R$ 5.000,01 a R$ 25.000;5000.01;25000.00;Gestor direto;Gerente do centro de custo
+Acima de R$ 25.000;25000.01;;Gerente do centro de custo;Diretoria da área

@@ -1,0 +1,116 @@
+table Solicitacoes
+	lineageTag: 9ad0b7e6-f403-503c-b861-292f55095627
+
+	column Id
+		dataType: string
+		isHidden
+		lineageTag: f0a39a2e-e333-5064-bfa3-e8c53682e550
+		summarizeBy: none
+		sourceColumn: Id
+
+	column Codigo
+		dataType: string
+		lineageTag: 2e699309-514e-56dd-ab53-8469f5e31900
+		summarizeBy: none
+		sourceColumn: Codigo
+
+	column Tipo
+		dataType: string
+		lineageTag: 4117d445-3c7f-5588-aa9e-a51c3d86576a
+		summarizeBy: none
+		sourceColumn: Tipo
+
+	column SolicitanteId
+		dataType: string
+		isHidden
+		lineageTag: 73f2a365-1150-5224-a2ff-5ad9eed00a6a
+		summarizeBy: none
+		sourceColumn: SolicitanteId
+
+	column CentroCusto
+		dataType: string
+		isHidden
+		lineageTag: cd333a2b-f66f-598b-bd25-389aedf01f62
+		summarizeBy: none
+		sourceColumn: CentroCusto
+
+	column FornecedorId
+		dataType: string
+		isHidden
+		lineageTag: 60a39f6d-ade8-5e0e-85e2-6b01d17c161e
+		summarizeBy: none
+		sourceColumn: FornecedorId
+
+	column ValorTotal
+		dataType: decimal
+		formatString: \R$ #,0.00;-\R$ #,0.00;\R$ #,0.00
+		lineageTag: c065a48d-6b48-5ff9-9092-2c77b66a072c
+		summarizeBy: sum
+		sourceColumn: ValorTotal
+
+	column Urgente
+		dataType: string
+		lineageTag: f9845c61-5dce-578e-972a-2def24078a58
+		summarizeBy: none
+		sourceColumn: Urgente
+
+	column Status
+		dataType: string
+		lineageTag: ab55c082-1562-5631-8d97-d859fc051aae
+		summarizeBy: none
+		sourceColumn: Status
+
+	column DataCriacao
+		dataType: dateTime
+		formatString: dd/mm/yyyy hh:nn
+		lineageTag: abb01efd-7be6-5754-9c51-661a854bdeda
+		summarizeBy: none
+		sourceColumn: DataCriacao
+
+	column DataConclusao
+		dataType: dateTime
+		formatString: dd/mm/yyyy hh:nn
+		lineageTag: 8a37787e-9e71-5148-8913-c348e7063f3b
+		summarizeBy: none
+		sourceColumn: DataConclusao
+
+	column TotalEtapas
+		dataType: int64
+		formatString: 0
+		lineageTag: 47536b0b-8540-5f6c-b256-415599236b96
+		summarizeBy: none
+		sourceColumn: TotalEtapas
+
+	column Atrasada
+		dataType: string
+		lineageTag: 396ae285-6c8f-58db-bf43-76e12d2907cc
+		summarizeBy: none
+		sourceColumn: Atrasada
+
+	column DataCriacaoDia
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		lineageTag: 3ae7872f-101c-50b3-b931-49d1a9470ce1
+		summarizeBy: none
+		sourceColumn: DataCriacaoDia
+		annotation UnderlyingDateTimeDataType = Date
+
+
+	column HorasTotais
+		dataType: double
+		formatString: 0.0
+		lineageTag: 2f0282eb-b4f8-55a0-b108-fd4b34ad7a12
+		summarizeBy: none
+		sourceColumn: HorasTotais
+
+	partition Solicitacoes = m
+		mode: import
+		source =
+				let
+				    Origem = if Fonte = "CSV" then LerCsv("solicitacoes.csv") else error "A fonte Online entra na fase 2, com o tenant da Tucci.",
+				    Tipado = Table.TransformColumnTypes(Origem, {{"Id", type text}, {"Codigo", type text}, {"Tipo", type text}, {"SolicitanteId", type text}, {"CentroCusto", type text}, {"FornecedorId", type text}, {"ValorTotal", Currency.Type}, {"Urgente", type text}, {"Status", type text}, {"DataCriacao", type datetime}, {"DataConclusao", type datetime}, {"TotalEtapas", Int64.Type}, {"Atrasada", type text}}, "en-US"),
+				    Derivada1 = Table.AddColumn(Tipado, "DataCriacaoDia", each Date.From([DataCriacao]), type date),
+				    Derivada2 = Table.AddColumn(Derivada1, "HorasTotais", each if [DataConclusao] = null then null else Duration.TotalHours([DataConclusao] - [DataCriacao]), type number)
+				in
+				    Derivada2
+

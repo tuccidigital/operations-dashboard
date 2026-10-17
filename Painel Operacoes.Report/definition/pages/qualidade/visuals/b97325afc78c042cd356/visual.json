@@ -1,0 +1,78 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "b97325afc78c042cd356",
+  "position": {
+    "x": 436,
+    "y": 176,
+    "z": 8000,
+    "width": 820,
+    "height": 250,
+    "tabOrder": 8000
+  },
+  "visual": {
+    "visualType": "lineChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Data"
+                    }
+                  },
+                  "Property": "Mes"
+                }
+              },
+              "queryRef": "Data.Mes",
+              "nativeQueryRef": "Mes",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Disponibilidade %"
+                }
+              },
+              "queryRef": "_Medidas.Disponibilidade %",
+              "nativeQueryRef": "Disponibilidade %"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Disponibilidade das injetoras por mês'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

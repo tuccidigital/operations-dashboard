@@ -1,0 +1,49 @@
+table ProducaoDiaria
+	lineageTag: c952d2c0-0e93-5e71-aa65-7be81cf7e767
+
+	column Data
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		lineageTag: d932c66b-4662-5f64-bcc3-fc68b24ceff8
+		summarizeBy: none
+		sourceColumn: Data
+		annotation UnderlyingDateTimeDataType = Date
+
+
+	column Injetora
+		dataType: string
+		isHidden
+		lineageTag: 1fffda46-63b5-5dca-98a3-1f13f3ca3186
+		summarizeBy: none
+		sourceColumn: Injetora
+
+	column PecasBoas
+		dataType: int64
+		formatString: #,0
+		lineageTag: c6c4a62b-540e-51f2-a0a9-c244d94dfb36
+		summarizeBy: sum
+		sourceColumn: PecasBoas
+
+	column Refugo
+		dataType: int64
+		formatString: #,0
+		lineageTag: e7a75ab5-77e1-52bc-8808-b431cd31919d
+		summarizeBy: sum
+		sourceColumn: Refugo
+
+	column HorasParadas
+		dataType: double
+		formatString: 0.0
+		lineageTag: 39cb3043-5fc6-5509-bc4e-6e25f7bb0392
+		summarizeBy: sum
+		sourceColumn: HorasParadas
+
+	partition ProducaoDiaria = m
+		mode: import
+		source =
+				let
+				    Origem = if Fonte = "CSV" then LerCsv("producao_diaria.csv") else error "A fonte Online entra na fase 2, com o tenant da Tucci.",
+				    Tipado = Table.TransformColumnTypes(Origem, {{"Data", type date}, {"Injetora", type text}, {"PecasBoas", Int64.Type}, {"Refugo", Int64.Type}, {"HorasParadas", type number}}, "en-US")
+				in
+				    Tipado
+

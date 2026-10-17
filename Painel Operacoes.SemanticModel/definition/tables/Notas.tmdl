@@ -1,0 +1,87 @@
+table Notas
+	lineageTag: f7040e3c-b043-5b80-8749-ea8dc1e12824
+
+	column ChaveAcesso
+		dataType: string
+		lineageTag: 76fde789-de3b-5220-aac6-168ca49d0b67
+		summarizeBy: none
+		sourceColumn: ChaveAcesso
+
+	column Numero
+		dataType: int64
+		formatString: 0
+		lineageTag: d11d0ceb-bd3e-531d-b142-beb9c810d219
+		summarizeBy: none
+		sourceColumn: Numero
+
+	column Serie
+		dataType: int64
+		formatString: 0
+		lineageTag: 1733b777-f7fe-5844-a0b3-216c5a238ad2
+		summarizeBy: none
+		sourceColumn: Serie
+
+	column DataEmissao
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		lineageTag: f2da3991-0563-53e0-b865-f7f2300d2d9c
+		summarizeBy: none
+		sourceColumn: DataEmissao
+		annotation UnderlyingDateTimeDataType = Date
+
+
+	column FornecedorId
+		dataType: string
+		isHidden
+		lineageTag: c5390038-d2c3-53da-bdf3-610281ab608e
+		summarizeBy: none
+		sourceColumn: FornecedorId
+
+	column ValorTotal
+		dataType: decimal
+		formatString: \R$ #,0.00;-\R$ #,0.00;\R$ #,0.00
+		lineageTag: c2783043-09bc-5e51-b533-36a75c896ad1
+		summarizeBy: sum
+		sourceColumn: ValorTotal
+
+	column SolicitacaoId
+		dataType: string
+		isHidden
+		lineageTag: 5e846cda-28f9-5d84-93b8-7cbfcb400e26
+		summarizeBy: none
+		sourceColumn: SolicitacaoId
+
+	column ValorPedido
+		dataType: decimal
+		formatString: \R$ #,0.00;-\R$ #,0.00;\R$ #,0.00
+		lineageTag: a4cc5310-031a-5a7a-9847-c1d40097ba1c
+		summarizeBy: sum
+		sourceColumn: ValorPedido
+
+	column Resultado
+		dataType: string
+		lineageTag: 29b01798-4ac8-5752-9b95-079e1174769b
+		summarizeBy: none
+		sourceColumn: Resultado
+
+	column Motivo
+		dataType: string
+		lineageTag: e56f5314-4958-5f99-9cb4-78ca9a90d530
+		summarizeBy: none
+		sourceColumn: Motivo
+
+	column StatusLancamento
+		dataType: string
+		lineageTag: 63fb14e0-fa08-57cb-a30a-863666ebcf24
+		summarizeBy: none
+		sourceColumn: StatusLancamento
+
+	partition Notas = m
+		mode: import
+		source =
+				let
+				    Origem = if Fonte = "CSV" then LerCsv("notas.csv") else error "A fonte Online entra na fase 2, com o tenant da Tucci.",
+				    Tipado = Table.TransformColumnTypes(Origem, {{"ChaveAcesso", type text}, {"Numero", Int64.Type}, {"Serie", Int64.Type}, {"DataEmissao", type date}, {"FornecedorId", type text}, {"ValorTotal", Currency.Type}, {"SolicitacaoId", type text}, {"ValorPedido", Currency.Type}, {"Resultado", type text}, {"Motivo", type text}, {"StatusLancamento", type text}}, "en-US")
+				in
+				    Tipado
+

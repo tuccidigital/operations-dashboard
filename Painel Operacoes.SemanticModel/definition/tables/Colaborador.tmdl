@@ -1,0 +1,57 @@
+table Colaborador
+	lineageTag: 0d4df440-eb37-5619-bc65-65f53aef228f
+
+	column Id
+		dataType: string
+		isHidden
+		lineageTag: 93a27c27-08aa-5291-bf05-df6d71ebb9c4
+		summarizeBy: none
+		sourceColumn: Id
+
+	column Nome
+		dataType: string
+		lineageTag: 3507cfb6-8da9-549a-9332-cfb1b2e9c843
+		summarizeBy: none
+		sourceColumn: Nome
+
+	column Email
+		dataType: string
+		lineageTag: f351ff3b-db2c-51c0-8ad9-073f398eefb8
+		summarizeBy: none
+		sourceColumn: Email
+
+	column Cargo
+		dataType: string
+		lineageTag: 916644cd-bd9b-5124-ac13-e41f50f61f62
+		summarizeBy: none
+		sourceColumn: Cargo
+
+	column CentroCusto
+		dataType: string
+		lineageTag: 3d1342ea-147d-50e1-87ba-b8bad5763fc7
+		summarizeBy: none
+		sourceColumn: CentroCusto
+
+	column GestorId
+		dataType: string
+		isHidden
+		lineageTag: 29a90c2e-0e99-5346-af38-35a402c6b621
+		summarizeBy: none
+		sourceColumn: GestorId
+
+	column NivelAlcada
+		dataType: int64
+		formatString: 0
+		lineageTag: 13078f8a-cb15-5e34-b47d-e43e45e8e203
+		summarizeBy: none
+		sourceColumn: NivelAlcada
+
+	partition Colaborador = m
+		mode: import
+		source =
+				let
+				    Origem = if Fonte = "CSV" then LerCsv("colaboradores.csv") else error "A fonte Online entra na fase 2, com o tenant da Tucci.",
+				    Tipado = Table.TransformColumnTypes(Origem, {{"Id", type text}, {"Nome", type text}, {"Email", type text}, {"Cargo", type text}, {"CentroCusto", type text}, {"GestorId", type text}, {"NivelAlcada", Int64.Type}}, "en-US")
+				in
+				    Tipado
+

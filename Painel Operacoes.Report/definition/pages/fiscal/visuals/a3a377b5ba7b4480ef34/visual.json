@@ -1,0 +1,204 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "a3a377b5ba7b4480ef34",
+  "position": {
+    "x": 536,
+    "y": 176,
+    "z": 8000,
+    "width": 720,
+    "height": 524,
+    "tabOrder": 8000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Notas"
+                    }
+                  },
+                  "Property": "Numero"
+                }
+              },
+              "queryRef": "Notas.Numero",
+              "nativeQueryRef": "Numero"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Fornecedor"
+                    }
+                  },
+                  "Property": "Nome"
+                }
+              },
+              "queryRef": "Fornecedor.Nome",
+              "nativeQueryRef": "Nome"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Notas"
+                    }
+                  },
+                  "Property": "DataEmissao"
+                }
+              },
+              "queryRef": "Notas.DataEmissao",
+              "nativeQueryRef": "DataEmissao"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Notas"
+                    }
+                  },
+                  "Property": "ValorTotal"
+                }
+              },
+              "queryRef": "Notas.ValorTotal",
+              "nativeQueryRef": "ValorTotal"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Notas"
+                    }
+                  },
+                  "Property": "ValorPedido"
+                }
+              },
+              "queryRef": "Notas.ValorPedido",
+              "nativeQueryRef": "ValorPedido"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Notas"
+                    }
+                  },
+                  "Property": "Resultado"
+                }
+              },
+              "queryRef": "Notas.Resultado",
+              "nativeQueryRef": "Resultado"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Notas"
+                    }
+                  },
+                  "Property": "Motivo"
+                }
+              },
+              "queryRef": "Notas.Motivo",
+              "nativeQueryRef": "Motivo"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Notas que pedem ação'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "6e0f2ef7edd6745da8bb",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Notas"
+              }
+            },
+            "Property": "Resultado"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "f",
+              "Entity": "Notas",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "In": {
+                      "Expressions": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "f"
+                              }
+                            },
+                            "Property": "Resultado"
+                          }
+                        }
+                      ],
+                      "Values": [
+                        [
+                          {
+                            "Literal": {
+                              "Value": "'Conferida'"
+                            }
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

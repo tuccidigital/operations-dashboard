@@ -1,0 +1,50 @@
+table Fornecedor
+	lineageTag: 3263483b-58cd-5e0a-b4bd-ba413d8053a2
+
+	column Id
+		dataType: string
+		isHidden
+		lineageTag: 32fa4ff8-924a-5752-88c5-82c557ac4d39
+		summarizeBy: none
+		sourceColumn: Id
+
+	column Nome
+		dataType: string
+		lineageTag: 383ec6e1-d3d3-5cdf-8655-2e1a599e0556
+		summarizeBy: none
+		sourceColumn: Nome
+
+	column CNPJ
+		dataType: string
+		lineageTag: 4a1318f0-0901-5775-9e3b-e59bb58ced0f
+		summarizeBy: none
+		sourceColumn: CNPJ
+
+	column Categoria
+		dataType: string
+		lineageTag: 6d66b59e-eef7-5a35-a2c0-9a381b78a279
+		summarizeBy: none
+		sourceColumn: Categoria
+
+	column PrazoPagamentoDias
+		dataType: int64
+		formatString: 0
+		lineageTag: 19f0ce12-1420-5ed3-b256-c190dacc7190
+		summarizeBy: none
+		sourceColumn: PrazoPagamentoDias
+
+	column Email
+		dataType: string
+		lineageTag: a8a91992-1eee-556c-9d51-3645323c158f
+		summarizeBy: none
+		sourceColumn: Email
+
+	partition Fornecedor = m
+		mode: import
+		source =
+				let
+				    Origem = if Fonte = "CSV" then LerCsv("fornecedores.csv") else error "A fonte Online entra na fase 2, com o tenant da Tucci.",
+				    Tipado = Table.TransformColumnTypes(Origem, {{"Id", type text}, {"Nome", type text}, {"CNPJ", type text}, {"Categoria", type text}, {"PrazoPagamentoDias", Int64.Type}, {"Email", type text}}, "en-US")
+				in
+				    Tipado
+

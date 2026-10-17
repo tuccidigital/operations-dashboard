@@ -1,0 +1,78 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "98683ea489ab7e285a89",
+  "position": {
+    "x": 436,
+    "y": 164,
+    "z": 9000,
+    "width": 400,
+    "height": 260,
+    "tabOrder": 9000
+  },
+  "visual": {
+    "visualType": "clusteredColumnChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Aprovacoes"
+                    }
+                  },
+                  "Property": "Etapa"
+                }
+              },
+              "queryRef": "Aprovacoes.Etapa",
+              "nativeQueryRef": "Etapa",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Tempo médio por etapa (h)"
+                }
+              },
+              "queryRef": "_Medidas.Tempo médio por etapa (h)",
+              "nativeQueryRef": "Tempo médio por etapa (h)"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Tempo médio por etapa (h)'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

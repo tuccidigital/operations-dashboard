@@ -1,0 +1,105 @@
+{
+  "name": "Tucci Digital",
+  "dataColors": [
+    "#5B6B35",
+    "#2C47A6",
+    "#51565C",
+    "#9DB067",
+    "#8F5B00",
+    "#1C7346",
+    "#B0281F",
+    "#7A8077"
+  ],
+  "foreground": "#17191C",
+  "foregroundNeutralSecondary": "#51565C",
+  "background": "#FFFFFF",
+  "backgroundLight": "#F2F3EF",
+  "backgroundNeutral": "#E5E7E1",
+  "tableAccent": "#5B6B35",
+  "good": "#1C7346",
+  "neutral": "#8F5B00",
+  "bad": "#B0281F",
+  "maximum": "#5B6B35",
+  "center": "#E5E7E1",
+  "minimum": "#FFFFFF",
+  "textClasses": {
+    "callout": {
+      "fontSize": 26,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#17191C"
+    },
+    "title": {
+      "fontSize": 12,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#17191C"
+    },
+    "header": {
+      "fontSize": 12,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#17191C"
+    },
+    "label": {
+      "fontSize": 10,
+      "fontFace": "Segoe UI",
+      "color": "#51565C"
+    }
+  },
+  "visualStyles": {
+    "*": {
+      "*": {
+        "background": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "transparency": 0
+          }
+        ],
+        "border": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#D2D5CD"
+              }
+            },
+            "radius": 10
+          }
+        ],
+        "dropShadow": [
+          {
+            "show": false
+          }
+        ],
+        "title": [
+          {
+            "show": true,
+            "fontColor": {
+              "solid": {
+                "color": "#17191C"
+              }
+            },
+            "fontSize": 12
+          }
+        ]
+      }
+    },
+    "page": {
+      "*": {
+        "background": [
+          {
+            "color": {
+              "solid": {
+                "color": "#F2F3EF"
+              }
+            },
+            "transparency": 0
+          }
+        ]
+      }
+    }
+  }
+}

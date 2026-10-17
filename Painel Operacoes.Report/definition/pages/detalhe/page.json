@@ -1,0 +1,47 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "name": "detalhe",
+  "displayName": "Detalhe do centro de custo",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "82f26c97a753e31c4ccf",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "CentroCusto"
+              }
+            },
+            "Property": "Nome"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "Drillthrough"
+      }
+    ]
+  },
+  "pageBinding": {
+    "name": "15f1b640601626d6f60b",
+    "type": "Drillthrough",
+    "parameters": [
+      {
+        "name": "05a5b4c57f4a79ce7eb1",
+        "boundFilter": "82f26c97a753e31c4ccf",
+        "fieldExpr": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "CentroCusto"
+              }
+            },
+            "Property": "Nome"
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "94348b753a4a8826f3c9",
+  "position": {
+    "x": 1000,
+    "y": 18,
+    "z": 2000,
+    "width": 256,
+    "height": 40,
+    "tabOrder": 2000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Dados fictícios · Lumina Componentes",
+                    "textStyle": {
+                      "fontSize": "9pt",
+                      "color": "#51565C"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

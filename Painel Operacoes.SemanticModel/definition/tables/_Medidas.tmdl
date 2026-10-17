@@ -1,0 +1,314 @@
+table _Medidas
+	lineageTag: 30b55d4d-9524-51b8-ae24-7a39c6271613
+
+	/// Último dia com dados. As medidas de mês atual e anterior se ancoram nela, nunca numa data fixa.
+	measure 'Data de referência' = CALCULATE ( MAX ( ProducaoDiaria[Data] ), REMOVEFILTERS () )
+		formatString: dd/mm/yyyy
+		displayFolder: Referência
+		lineageTag: 8c0012ea-e7d1-5a03-ba77-2d444cc20d9c
+
+	/// Quantidade de solicitações (compra, reembolso e férias).
+	measure 'Solicitações' = COUNTROWS ( Solicitacoes )
+		formatString: #,0
+		displayFolder: Compras
+		lineageTag: f185da64-9fb8-5d3f-9dac-b0c0a30fbe54
+
+	/// Soma das solicitações aprovadas.
+	measure 'Valor aprovado' = CALCULATE ( SUM ( Solicitacoes[ValorTotal] ), Solicitacoes[Status] = "Aprovado" )
+		formatString: \R$ #,0.00;-\R$ #,0.00;\R$ #,0.00
+		displayFolder: Compras
+		lineageTag: 5fd520ea-6038-53dc-80de-bcb4edfc0ec1
+
+	/// Horas da criação até a decisão final, média das solicitações concluídas.
+	measure 'Tempo médio de aprovação (h)' = AVERAGEX ( FILTER ( Solicitacoes, NOT ISBLANK ( Solicitacoes[HorasTotais] ) ), Solicitacoes[HorasTotais] )
+		formatString: 0.0
+		displayFolder: Compras
+		lineageTag: 49aeb7a1-648a-51e5-b2b2-c697e12d6a02
+
+	/// Aprovadas sem nenhuma etapa fora do prazo (24 h por etapa, 4 h se urgente).
+	measure '% aprovadas no SLA' =
+			VAR Aprovadas = CALCULATE ( COUNTROWS ( Solicitacoes ), Solicitacoes[Status] = "Aprovado" )
+			VAR NoPrazo = CALCULATE ( COUNTROWS ( Solicitacoes ), Solicitacoes[Status] = "Aprovado", Solicitacoes[Atrasada] = "Não" )
+			RETURN DIVIDE ( NoPrazo, Aprovadas )
+		formatString: 0.0%
+		displayFolder: Compras
+		lineageTag: b6817862-e132-53bd-a0bf-fd3db7836a86
+
+	/// Solicitações com ao menos uma etapa fora do prazo.
+	measure 'Solicitações atrasadas' = CALCULATE ( COUNTROWS ( Solicitacoes ), Solicitacoes[Atrasada] = "Sim" )
+		formatString: #,0
+		displayFolder: Compras
+		lineageTag: 930e3239-b056-50e4-87ba-cc4c9e0f7352
+
+	/// Média de horas que cada etapa de aprovação levou.
+	measure 'Tempo médio por etapa (h)' = AVERAGE ( Aprovacoes[DuracaoHoras] )
+		formatString: 0.0
+		displayFolder: Compras
+		lineageTag: 9aa5f1b6-1053-5e99-b5f2-d26af4551d0d
+
+	/// Orçamento mensal dos centros de custo no período.
+	measure 'Orçamento' = SUM ( OrcamentoMensal[Valor] )
+		formatString: \R$ #,0.00;-\R$ #,0.00;\R$ #,0.00
+		displayFolder: Compras
+		lineageTag: 736539fb-8871-5fb1-a8c1-93cf3a9a075d
+
+	/// Valor aprovado sobre o orçamento do período.
+	measure 'Consumo do orçamento %' = DIVIDE ( [Valor aprovado], [Orçamento] )
+		formatString: 0.0%
+		displayFolder: Compras
+		lineageTag: a6757bcc-3664-56fe-b7f9-a788e120c5a1
+
+	/// Acumulado no ano até a data do contexto.
+	measure 'Valor aprovado no ano' = TOTALYTD ( [Valor aprovado], Data[Data] )
+		formatString: \R$ #,0.00;-\R$ #,0.00;\R$ #,0.00
+		displayFolder: Compras
+		lineageTag: b70852ce-98c0-51e2-b030-7d75957a432f
+
+	/// Centros de custo com consumo acima de 100% no período.
+	measure 'Centros acima do orçamento' = COUNTROWS ( FILTER ( VALUES ( CentroCusto[Codigo] ), [Consumo do orçamento %] > 1 ) )
+		formatString: #,0
+		displayFolder: Compras
+		lineageTag: 9c4f6cf6-43df-503e-a072-1f1c87e0adf4
+
+	/// Notas fiscais recebidas.
+	measure Notas = COUNTROWS ( Notas )
+		formatString: #,0
+		displayFolder: Fiscal
+		lineageTag: f2bb163b-6a2d-5aa6-a907-6fd8e7deb2b9
+
+	/// Notas com valor fora de ±2% do pedido.
+	measure 'Notas divergentes' = CALCULATE ( COUNTROWS ( Notas ), Notas[Resultado] = "Divergente" )
+		formatString: #,0
+		displayFolder: Fiscal
+		lineageTag: 76d04896-16cd-5937-8bb7-293b83bf8764
+
+	/// Notas divergentes sobre o total de notas.
+	measure '% notas com divergência' = DIVIDE ( [Notas divergentes], [Notas] )
+		formatString: 0.0%
+		displayFolder: Fiscal
+		lineageTag: 95229a7c-f619-5329-8282-694ae8928716
+
+	/// Soma das diferenças absolutas entre nota e pedido.
+	measure 'Valor divergente' = SUMX ( FILTER ( Notas, Notas[Resultado] = "Divergente" ), ABS ( Notas[ValorTotal] - Notas[ValorPedido] ) )
+		formatString: \R$ #,0.00;-\R$ #,0.00;\R$ #,0.00
+		displayFolder: Fiscal
+		lineageTag: ce8e3485-53a2-5497-8881-0600e2c556b7
+
+	/// Notas sem pedido aprovado do fornecedor.
+	measure 'Notas sem pedido' = CALCULATE ( COUNTROWS ( Notas ), Notas[Resultado] = "Sem pedido" )
+		formatString: #,0
+		displayFolder: Fiscal
+		lineageTag: a5a3eb79-2e89-5462-a412-4a17d3cc820a
+
+	/// Inspeções realizadas.
+	measure 'Inspeções' = COUNTROWS ( Inspecoes )
+		formatString: #,0
+		displayFolder: Qualidade
+		lineageTag: 30f2b770-1317-527d-8250-c764bfcf3135
+
+	/// Não conformidades abertas no período.
+	measure NCs = COUNTROWS ( NaoConformidades )
+		formatString: #,0
+		displayFolder: Qualidade
+		lineageTag: 039a0414-4d7f-58e9-93cb-791cb6d487c3
+
+	/// NCs ainda não fechadas.
+	measure 'NCs abertas' = CALCULATE ( COUNTROWS ( NaoConformidades ), NaoConformidades[Estado] <> "Fechada" )
+		formatString: #,0
+		displayFolder: Qualidade
+		lineageTag: 8bd66346-dcf8-5a75-be38-a4e7512d6070
+
+	/// NCs abertas com prazo anterior à data de referência.
+	measure 'NCs vencidas' =
+			VAR Ref = [Data de referência]
+			RETURN CALCULATE ( COUNTROWS ( NaoConformidades ), NaoConformidades[Estado] <> "Fechada", NaoConformidades[Prazo] < Ref )
+		formatString: #,0
+		displayFolder: Qualidade
+		lineageTag: 5084793f-f9b2-5390-bd7a-7f8744dfdfdb
+
+	/// Dias entre abertura e fechamento das NCs fechadas.
+	measure 'Tempo médio de fechamento (dias)' = AVERAGE ( NaoConformidades[DiasParaFechar] )
+		formatString: 0.0
+		displayFolder: Qualidade
+		lineageTag: cb45ec78-09a8-56de-bcf9-6c312f3f75d2
+
+	/// Refugo sobre o total produzido.
+	measure 'Índice de refugo %' = DIVIDE ( SUM ( ProducaoDiaria[Refugo] ), SUM ( ProducaoDiaria[PecasBoas] ) + SUM ( ProducaoDiaria[Refugo] ) )
+		formatString: 0.00%
+		displayFolder: Qualidade
+		lineageTag: 139e9793-3da4-5440-87be-4e45738642c0
+
+	/// Horas em operação sobre as horas do período (24 h por injetora por dia útil).
+	measure 'Disponibilidade %' = 1 - DIVIDE ( SUM ( ProducaoDiaria[HorasParadas] ), COUNTROWS ( ProducaoDiaria ) * 24 )
+		formatString: 0.0%
+		displayFolder: Qualidade
+		lineageTag: d0fd5f31-1661-56de-87cf-33bc31cc4f7c
+
+	/// Valor aprovado no mês da data de referência.
+	measure 'Valor aprovado · mês' =
+			VAR Ref = [Data de referência]
+			RETURN CALCULATE ( [Valor aprovado], DATESBETWEEN ( Data[Data], DATE ( YEAR ( Ref ), MONTH ( Ref ), 1 ), Ref ) )
+		formatString: \R$ #,0.00;-\R$ #,0.00;\R$ #,0.00
+		displayFolder: Resumo
+		lineageTag: 000abfe4-3e80-5067-a030-acefc959418e
+
+	/// Valor aprovado no mês anterior ao da data de referência.
+	measure 'Valor aprovado · mês anterior' =
+			VAR Ref = [Data de referência]
+			VAR Ini = EDATE ( DATE ( YEAR ( Ref ), MONTH ( Ref ), 1 ), -1 )
+			RETURN CALCULATE ( [Valor aprovado], DATESBETWEEN ( Data[Data], Ini, EOMONTH ( Ini, 0 ) ) )
+		formatString: \R$ #,0.00;-\R$ #,0.00;\R$ #,0.00
+		displayFolder: Resumo
+		lineageTag: 3c3e7560-1408-5927-b962-9b9bb940b6d5
+
+	/// Variação de Valor aprovado contra o mês anterior.
+	measure 'Valor aprovado · variação' =
+			VAR Atual = [Valor aprovado · mês]
+			VAR Antes = [Valor aprovado · mês anterior]
+			RETURN DIVIDE ( Atual - Antes, Antes )
+		formatString: +0.0%;-0.0%;0.0%
+		displayFolder: Resumo
+		lineageTag: 088a7df3-8d8b-5ca8-8581-cfc72452e07b
+
+	/// Tempo médio de aprovação (h) no mês da data de referência.
+	measure 'Tempo médio de aprovação (h) · mês' =
+			VAR Ref = [Data de referência]
+			RETURN CALCULATE ( [Tempo médio de aprovação (h)], DATESBETWEEN ( Data[Data], DATE ( YEAR ( Ref ), MONTH ( Ref ), 1 ), Ref ) )
+		formatString: 0.0
+		displayFolder: Resumo
+		lineageTag: 8ee700a1-6fb4-5042-9152-64cd82782d61
+
+	/// Tempo médio de aprovação (h) no mês anterior ao da data de referência.
+	measure 'Tempo médio de aprovação (h) · mês anterior' =
+			VAR Ref = [Data de referência]
+			VAR Ini = EDATE ( DATE ( YEAR ( Ref ), MONTH ( Ref ), 1 ), -1 )
+			RETURN CALCULATE ( [Tempo médio de aprovação (h)], DATESBETWEEN ( Data[Data], Ini, EOMONTH ( Ini, 0 ) ) )
+		formatString: 0.0
+		displayFolder: Resumo
+		lineageTag: 8b920476-3c9f-5f0b-b88b-552fdd13ff52
+
+	/// Variação de Tempo médio de aprovação (h) contra o mês anterior.
+	measure 'Tempo médio de aprovação (h) · variação' =
+			VAR Atual = [Tempo médio de aprovação (h) · mês]
+			VAR Antes = [Tempo médio de aprovação (h) · mês anterior]
+			RETURN DIVIDE ( Atual - Antes, Antes )
+		formatString: +0.0%;-0.0%;0.0%
+		displayFolder: Resumo
+		lineageTag: 34cd1837-8d0d-51d1-8e7f-67cb335e7af6
+
+	/// % aprovadas no SLA no mês da data de referência.
+	measure '% aprovadas no SLA · mês' =
+			VAR Ref = [Data de referência]
+			RETURN CALCULATE ( [% aprovadas no SLA], DATESBETWEEN ( Data[Data], DATE ( YEAR ( Ref ), MONTH ( Ref ), 1 ), Ref ) )
+		formatString: 0.0%
+		displayFolder: Resumo
+		lineageTag: c3f2c42f-a787-56d7-b2d3-aca7201ccfa4
+
+	/// % aprovadas no SLA no mês anterior ao da data de referência.
+	measure '% aprovadas no SLA · mês anterior' =
+			VAR Ref = [Data de referência]
+			VAR Ini = EDATE ( DATE ( YEAR ( Ref ), MONTH ( Ref ), 1 ), -1 )
+			RETURN CALCULATE ( [% aprovadas no SLA], DATESBETWEEN ( Data[Data], Ini, EOMONTH ( Ini, 0 ) ) )
+		formatString: 0.0%
+		displayFolder: Resumo
+		lineageTag: 5e36becf-c975-5087-a2ae-645b619d133c
+
+	/// Variação de % aprovadas no SLA contra o mês anterior.
+	measure '% aprovadas no SLA · variação' =
+			VAR Atual = [% aprovadas no SLA · mês]
+			VAR Antes = [% aprovadas no SLA · mês anterior]
+			RETURN DIVIDE ( Atual - Antes, Antes )
+		formatString: +0.0%;-0.0%;0.0%
+		displayFolder: Resumo
+		lineageTag: 022f0593-8e89-59c8-a49a-d9481f7815f4
+
+	/// % notas com divergência no mês da data de referência.
+	measure '% notas com divergência · mês' =
+			VAR Ref = [Data de referência]
+			RETURN CALCULATE ( [% notas com divergência], DATESBETWEEN ( Data[Data], DATE ( YEAR ( Ref ), MONTH ( Ref ), 1 ), Ref ) )
+		formatString: 0.0%
+		displayFolder: Resumo
+		lineageTag: 7b6fae93-4a8f-5084-be5f-38d445eaacf9
+
+	/// % notas com divergência no mês anterior ao da data de referência.
+	measure '% notas com divergência · mês anterior' =
+			VAR Ref = [Data de referência]
+			VAR Ini = EDATE ( DATE ( YEAR ( Ref ), MONTH ( Ref ), 1 ), -1 )
+			RETURN CALCULATE ( [% notas com divergência], DATESBETWEEN ( Data[Data], Ini, EOMONTH ( Ini, 0 ) ) )
+		formatString: 0.0%
+		displayFolder: Resumo
+		lineageTag: 3c59833c-02b4-5ad2-8218-faa33287d540
+
+	/// Variação de % notas com divergência contra o mês anterior.
+	measure '% notas com divergência · variação' =
+			VAR Atual = [% notas com divergência · mês]
+			VAR Antes = [% notas com divergência · mês anterior]
+			RETURN DIVIDE ( Atual - Antes, Antes )
+		formatString: +0.0%;-0.0%;0.0%
+		displayFolder: Resumo
+		lineageTag: a511a5d8-23ba-564f-ab08-6a15bef1aea4
+
+	/// NCs no mês da data de referência.
+	measure 'NCs · mês' =
+			VAR Ref = [Data de referência]
+			RETURN CALCULATE ( [NCs], DATESBETWEEN ( Data[Data], DATE ( YEAR ( Ref ), MONTH ( Ref ), 1 ), Ref ) )
+		formatString: #,0
+		displayFolder: Resumo
+		lineageTag: 0e65179c-5d27-585a-9f2f-f535a253ea50
+
+	/// NCs no mês anterior ao da data de referência.
+	measure 'NCs · mês anterior' =
+			VAR Ref = [Data de referência]
+			VAR Ini = EDATE ( DATE ( YEAR ( Ref ), MONTH ( Ref ), 1 ), -1 )
+			RETURN CALCULATE ( [NCs], DATESBETWEEN ( Data[Data], Ini, EOMONTH ( Ini, 0 ) ) )
+		formatString: #,0
+		displayFolder: Resumo
+		lineageTag: 6d11e44d-3f50-5fa8-be0f-6e1cd84809f5
+
+	/// Variação de NCs contra o mês anterior.
+	measure 'NCs · variação' =
+			VAR Atual = [NCs · mês]
+			VAR Antes = [NCs · mês anterior]
+			RETURN DIVIDE ( Atual - Antes, Antes )
+		formatString: +0.0%;-0.0%;0.0%
+		displayFolder: Resumo
+		lineageTag: 17a82e99-4b91-594c-8253-a26cdf6aeb52
+
+	/// Índice de refugo % no mês da data de referência.
+	measure 'Índice de refugo % · mês' =
+			VAR Ref = [Data de referência]
+			RETURN CALCULATE ( [Índice de refugo %], DATESBETWEEN ( Data[Data], DATE ( YEAR ( Ref ), MONTH ( Ref ), 1 ), Ref ) )
+		formatString: 0.00%
+		displayFolder: Resumo
+		lineageTag: 0556b589-ca10-5af5-8bc3-cfea1caedb6f
+
+	/// Índice de refugo % no mês anterior ao da data de referência.
+	measure 'Índice de refugo % · mês anterior' =
+			VAR Ref = [Data de referência]
+			VAR Ini = EDATE ( DATE ( YEAR ( Ref ), MONTH ( Ref ), 1 ), -1 )
+			RETURN CALCULATE ( [Índice de refugo %], DATESBETWEEN ( Data[Data], Ini, EOMONTH ( Ini, 0 ) ) )
+		formatString: 0.00%
+		displayFolder: Resumo
+		lineageTag: 0acac09e-ab3d-5230-aa5b-98b5a581cb31
+
+	/// Variação de Índice de refugo % contra o mês anterior.
+	measure 'Índice de refugo % · variação' =
+			VAR Atual = [Índice de refugo % · mês]
+			VAR Antes = [Índice de refugo % · mês anterior]
+			RETURN DIVIDE ( Atual - Antes, Antes )
+		formatString: +0.0%;-0.0%;0.0%
+		displayFolder: Resumo
+		lineageTag: 11965f9f-c22a-5108-96fb-f09950aac078
+
+	column Value
+		dataType: string
+		isHidden
+		lineageTag: 22394dda-617f-5285-b4b9-2abb691f9e47
+		summarizeBy: none
+		sourceColumn: Value
+
+	partition _Medidas = m
+		mode: import
+		source =
+				let Fonte = #table(type table [Value = text], {}) in Fonte
+

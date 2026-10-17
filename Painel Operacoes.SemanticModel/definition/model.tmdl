@@ -1,0 +1,26 @@
+model Model
+	culture: pt-BR
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: pt-BR
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["Fonte", "PastaDados", "LerCsv", "CentroCusto", "Colaborador", "Fornecedor", "Produto", "Ativo", "MapaGerente", "Feriado", "Solicitacoes", "Aprovacoes", "Notas", "Inspecoes", "NaoConformidades", "OrcamentoMensal", "ProducaoDiaria", "_Medidas"]
+
+ref table CentroCusto
+ref table Colaborador
+ref table Fornecedor
+ref table Produto
+ref table Ativo
+ref table MapaGerente
+ref table Feriado
+ref table Solicitacoes
+ref table Aprovacoes
+ref table Notas
+ref table Inspecoes
+ref table NaoConformidades
+ref table OrcamentoMensal
+ref table ProducaoDiaria
+ref table Data
+ref table _Medidas

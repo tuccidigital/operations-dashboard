@@ -1,0 +1,45 @@
+table CentroCusto
+	lineageTag: fc485ce4-cb69-5322-8299-4e5548ba52c2
+
+	column Codigo
+		dataType: string
+		lineageTag: f1875984-5cb8-5bd7-9314-5d05de97b8f6
+		summarizeBy: none
+		sourceColumn: Codigo
+
+	column Nome
+		dataType: string
+		lineageTag: 1c3e719f-0a2a-50fe-a06d-cf642bda3c2b
+		summarizeBy: none
+		sourceColumn: Nome
+
+	column OrcamentoMensal
+		dataType: decimal
+		formatString: \R$ #,0.00;-\R$ #,0.00;\R$ #,0.00
+		lineageTag: 93835e36-5778-5db8-86e0-e88a7fb71662
+		summarizeBy: none
+		sourceColumn: OrcamentoMensal
+
+	column GerenteId
+		dataType: string
+		isHidden
+		lineageTag: ae5d370c-73f8-58f2-8ff2-76daf7faf2f0
+		summarizeBy: none
+		sourceColumn: GerenteId
+
+	column DiretorId
+		dataType: string
+		isHidden
+		lineageTag: ca6b8da3-2e39-51c3-812c-b3d48cbe2fe3
+		summarizeBy: none
+		sourceColumn: DiretorId
+
+	partition CentroCusto = m
+		mode: import
+		source =
+				let
+				    Origem = if Fonte = "CSV" then LerCsv("centros_custo.csv") else error "A fonte Online entra na fase 2, com o tenant da Tucci.",
+				    Tipado = Table.TransformColumnTypes(Origem, {{"Codigo", type text}, {"Nome", type text}, {"OrcamentoMensal", Currency.Type}, {"GerenteId", type text}, {"DiretorId", type text}}, "en-US")
+				in
+				    Tipado
+

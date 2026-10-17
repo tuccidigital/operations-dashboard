@@ -1,0 +1,25 @@
+table MapaGerente
+	lineageTag: 28784cf0-e8a3-5554-a151-c789618f4955
+	isHidden
+
+	column Email
+		dataType: string
+		lineageTag: 7ecb3834-030a-5a6f-9a3c-3d37a84e7d0e
+		summarizeBy: none
+		sourceColumn: Email
+
+	column CentroCusto
+		dataType: string
+		lineageTag: c91ab6f9-4dcc-5441-b85f-0387f9f526de
+		summarizeBy: none
+		sourceColumn: CentroCusto
+
+	partition MapaGerente = m
+		mode: import
+		source =
+				let
+				    Origem = if Fonte = "CSV" then LerCsv("mapa_gerentes.csv") else error "A fonte Online entra na fase 2, com o tenant da Tucci.",
+				    Tipado = Table.TransformColumnTypes(Origem, {{"Email", type text}, {"CentroCusto", type text}}, "en-US")
+				in
+				    Tipado
+

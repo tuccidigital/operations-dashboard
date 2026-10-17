@@ -1,0 +1,48 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "0e3f49806e17cc5bb5c9",
+  "position": {
+    "x": 24,
+    "y": 12,
+    "z": 1000,
+    "width": 900,
+    "height": 56,
+    "tabOrder": 1000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Conferência de notas",
+                    "textStyle": {
+                      "fontSize": "20pt",
+                      "color": "#17191C",
+                      "fontWeight": "bold"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Notas fiscais conferidas com o pedido pelo P03 Robô de NF-e.",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#51565C"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

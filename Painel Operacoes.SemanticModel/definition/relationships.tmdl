@@ -1,0 +1,74 @@
+relationship 45b63f97-6e48-5c4e-9ebf-c463def6097e
+	fromColumn: Solicitacoes.CentroCusto
+	toColumn: CentroCusto.Codigo
+
+relationship bf4d662a-0eeb-599a-8fac-6d069eb88fd0
+	fromColumn: Solicitacoes.FornecedorId
+	toColumn: Fornecedor.Id
+
+relationship fbbee6dc-d3df-5b64-9720-87a359ca9f04
+	fromColumn: Solicitacoes.SolicitanteId
+	toColumn: Colaborador.Id
+
+relationship f2d9eeb8-089e-5813-b0c4-ddbb8932fcac
+	fromColumn: Solicitacoes.DataCriacaoDia
+	toColumn: Data.Data
+
+relationship 7bbba581-61a7-58e6-9e40-070e146ca540
+	fromColumn: Aprovacoes.SolicitacaoId
+	toColumn: Solicitacoes.Id
+
+relationship f90376ae-b981-5166-a95a-f65d5364dfb2
+	isActive: false
+	fromColumn: Aprovacoes.AprovadorId
+	toColumn: Colaborador.Id
+
+relationship 44041938-2acc-5492-af51-d52a6e1a2bb2
+	fromColumn: Notas.FornecedorId
+	toColumn: Fornecedor.Id
+
+relationship cef957aa-40f1-5034-a8b9-737fd6657f99
+	fromColumn: Notas.DataEmissao
+	toColumn: Data.Data
+
+relationship d74e5340-55d0-5029-918f-ade84b25b863
+	isActive: false
+	fromColumn: Notas.SolicitacaoId
+	toColumn: Solicitacoes.Id
+
+relationship c66604aa-0a33-5b86-9953-0841c28fc6f9
+	fromColumn: Inspecoes.AtivoCodigo
+	toColumn: Ativo.Codigo
+
+relationship e562f15d-df10-5dc2-834f-6d05b3b0669f
+	fromColumn: Inspecoes.Dia
+	toColumn: Data.Data
+
+relationship 61364672-50d4-523e-a1df-6e1dc0621204
+	fromColumn: NaoConformidades.AtivoCodigo
+	toColumn: Ativo.Codigo
+
+relationship 227e13b3-5ae6-5b85-8aa7-563a4d35e6c0
+	fromColumn: NaoConformidades.AberturaDia
+	toColumn: Data.Data
+
+relationship d6ea25fb-b748-5c19-8776-f8ed71b154e6
+	isActive: false
+	fromColumn: NaoConformidades.InspecaoId
+	toColumn: Inspecoes.Id
+
+relationship 1b336c19-3b47-523d-a82e-850ec4354d2a
+	fromColumn: OrcamentoMensal.CentroCusto
+	toColumn: CentroCusto.Codigo
+
+relationship 53b10dba-85a9-5160-b644-82e43b311c13
+	fromColumn: OrcamentoMensal.Mes
+	toColumn: Data.Data
+
+relationship b949b02e-5907-56ee-81cb-2f70570ed6a7
+	fromColumn: ProducaoDiaria.Data
+	toColumn: Data.Data
+
+relationship e7f10d9d-408a-57a3-b285-02ea92010e3b
+	fromColumn: ProducaoDiaria.Injetora
+	toColumn: Ativo.Codigo

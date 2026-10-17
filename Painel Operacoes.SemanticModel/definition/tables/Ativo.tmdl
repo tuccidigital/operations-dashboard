@@ -1,0 +1,36 @@
+table Ativo
+	lineageTag: c5e757c3-3480-537f-b1d9-1869c2216c4e
+
+	column Codigo
+		dataType: string
+		lineageTag: 8a70e27d-6662-5ec6-8923-cc76b4a2dbf2
+		summarizeBy: none
+		sourceColumn: Codigo
+
+	column Nome
+		dataType: string
+		lineageTag: e25a8fa2-c1f6-5a3a-b5f2-04a44406fc78
+		summarizeBy: none
+		sourceColumn: Nome
+
+	column Tipo
+		dataType: string
+		lineageTag: 6ba56ee8-1dae-57b2-8183-ef8bd1aaeec9
+		summarizeBy: none
+		sourceColumn: Tipo
+
+	column Area
+		dataType: string
+		lineageTag: e262d4c5-e8ee-5274-a735-d24704a8e2f7
+		summarizeBy: none
+		sourceColumn: Area
+
+	partition Ativo = m
+		mode: import
+		source =
+				let
+				    Origem = if Fonte = "CSV" then LerCsv("ativos.csv") else error "A fonte Online entra na fase 2, com o tenant da Tucci.",
+				    Tipado = Table.TransformColumnTypes(Origem, {{"Codigo", type text}, {"Nome", type text}, {"Tipo", type text}, {"Area", type text}}, "en-US")
+				in
+				    Tipado
+

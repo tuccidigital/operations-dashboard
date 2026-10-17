@@ -1,0 +1,22 @@
+expression Fonte = "CSV" meta [IsParameterQuery=true, List={"CSV", "Online"}, DefaultValue="CSV", Type="Text", IsParameterQueryRequired=true]
+	lineageTag: bdd2487a-d877-57bd-ae4c-3eed254368fa
+
+	annotation PBI_ResultType = Text
+
+expression PastaDados = "C:\tucci-digital-solutions\portfolio\P05-painel-operacoes\data" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: c2d6cee4-f8a8-5a20-9e03-c59e0567b2a3
+
+	annotation PBI_ResultType = Text
+
+expression LerCsv =
+		(arquivo as text) as table =>
+		let
+		    Conteudo = Csv.Document(File.Contents(PastaDados & "\" & arquivo), [Delimiter = ";", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+		    Cabecalho = Table.PromoteHeaders(Conteudo, [PromoteAllScalars = true]),
+		    // Campo vazio no CSV vira nulo, para datas e números não darem erro na tipagem.
+		    SemVazios = Table.ReplaceValue(Cabecalho, "", null, Replacer.ReplaceValue, Table.ColumnNames(Cabecalho))
+		in
+		    SemVazios
+	lineageTag: 2040c75f-1640-59f5-a4e7-8018bf62a418
+
+	annotation PBI_ResultType = Function

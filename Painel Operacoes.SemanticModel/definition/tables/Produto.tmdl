@@ -1,0 +1,44 @@
+table Produto
+	lineageTag: d75097fa-6ba7-582e-9ea0-dade547dc57b
+
+	column Codigo
+		dataType: string
+		lineageTag: af0d6884-2160-5875-b021-534bf570a38c
+		summarizeBy: none
+		sourceColumn: Codigo
+
+	column Descricao
+		dataType: string
+		lineageTag: 361ec2e6-ad4a-5ed3-90c8-458eaa55bd02
+		summarizeBy: none
+		sourceColumn: Descricao
+
+	column Categoria
+		dataType: string
+		lineageTag: b5ae0d99-4298-50a1-978e-9ba53265ae5c
+		summarizeBy: none
+		sourceColumn: Categoria
+
+	column PrecoReferencia
+		dataType: decimal
+		formatString: \R$ #,0.00;-\R$ #,0.00;\R$ #,0.00
+		lineageTag: 028cfb37-2a44-5d02-8bcf-93a40d525295
+		summarizeBy: none
+		sourceColumn: PrecoReferencia
+
+	column FornecedorPadraoId
+		dataType: string
+		isHidden
+		lineageTag: 51adf140-cbe7-5e6f-9fb6-3ea79ce727a8
+		summarizeBy: none
+		sourceColumn: FornecedorPadraoId
+
+	partition Produto = m
+		mode: import
+		source =
+				let
+				    Origem = if Fonte = "CSV" then LerCsv("produtos.csv") else error "A fonte Online entra na fase 2, com o tenant da Tucci.",
+				    Tipado = Table.TransformColumnTypes(Origem, {{"Codigo", type text}, {"Descricao", type text}, {"Categoria", type text}, {"PrecoReferencia", Currency.Type}, {"FornecedorPadraoId", type text}}, "en-US")
+				in
+				    Tipado
+

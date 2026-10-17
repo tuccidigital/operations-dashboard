@@ -1,0 +1,63 @@
+table Inspecoes
+	lineageTag: 01bb4fce-aedc-5b10-871d-c1ddf3e21290
+
+	column Id
+		dataType: string
+		isHidden
+		lineageTag: f38cf59e-4c17-52b8-87f9-6ff858a5b42c
+		summarizeBy: none
+		sourceColumn: Id
+
+	column AtivoCodigo
+		dataType: string
+		isHidden
+		lineageTag: fdc19b85-5231-59b0-bbb3-7d0c6b53e470
+		summarizeBy: none
+		sourceColumn: AtivoCodigo
+
+	column InspetorId
+		dataType: string
+		isHidden
+		lineageTag: 63c80573-2632-5975-a6fe-679dfbd35c20
+		summarizeBy: none
+		sourceColumn: InspetorId
+
+	column Inicio
+		dataType: dateTime
+		formatString: dd/mm/yyyy hh:nn
+		lineageTag: f38a38e6-218d-5dec-93b9-bbaa1b596906
+		summarizeBy: none
+		sourceColumn: Inicio
+
+	column Fim
+		dataType: dateTime
+		formatString: dd/mm/yyyy hh:nn
+		lineageTag: f384c5af-216a-52c3-9537-c0f080a68dce
+		summarizeBy: none
+		sourceColumn: Fim
+
+	column Resultado
+		dataType: string
+		lineageTag: 3797b417-670a-5c71-bff0-894b54523e13
+		summarizeBy: none
+		sourceColumn: Resultado
+
+	column Dia
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		lineageTag: 195d299d-ba9f-52d8-b98a-05a95a998514
+		summarizeBy: none
+		sourceColumn: Dia
+		annotation UnderlyingDateTimeDataType = Date
+
+
+	partition Inspecoes = m
+		mode: import
+		source =
+				let
+				    Origem = if Fonte = "CSV" then LerCsv("inspecoes.csv") else error "A fonte Online entra na fase 2, com o tenant da Tucci.",
+				    Tipado = Table.TransformColumnTypes(Origem, {{"Id", type text}, {"AtivoCodigo", type text}, {"InspetorId", type text}, {"Inicio", type datetime}, {"Fim", type datetime}, {"Resultado", type text}}, "en-US"),
+				    Derivada1 = Table.AddColumn(Tipado, "Dia", each Date.From([Inicio]), type date)
+				in
+				    Derivada1
+

@@ -1,0 +1,119 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "c2d6eb26c9c1b021be10",
+  "position": {
+    "x": 796,
+    "y": 248,
+    "z": 16000,
+    "width": 460,
+    "height": 220,
+    "tabOrder": 16000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "CentroCusto"
+                    }
+                  },
+                  "Property": "Nome"
+                }
+              },
+              "queryRef": "CentroCusto.Nome",
+              "nativeQueryRef": "Nome"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Valor aprovado · mês"
+                }
+              },
+              "queryRef": "_Medidas.Valor aprovado · mês",
+              "nativeQueryRef": "Valor aprovado · mês"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Consumo do orçamento %"
+                }
+              },
+              "queryRef": "_Medidas.Consumo do orçamento %",
+              "nativeQueryRef": "Consumo do orçamento %"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Solicitações atrasadas"
+                }
+              },
+              "queryRef": "_Medidas.Solicitações atrasadas",
+              "nativeQueryRef": "Solicitações atrasadas"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Medidas"
+                  }
+                },
+                "Property": "Consumo do orçamento %"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": false
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Centros de custo'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
