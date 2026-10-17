@@ -102,11 +102,19 @@ def cadeia(solicitante, cc, valor):
         etapas = [gerente_cc[cc], diretor_cc[cc]]
     out = []
     for e in etapas:
-        if e == solicitante:  # ninguém aprova a própria solicitação: sobe um nível
-            e = colab[e]["GestorId"] or diretor_cc[cc]
+        e = sem_autoaprovacao(e, solicitante, cc)
         if not out or out[-1] != e:
             out.append(e)
     return out
+
+
+def sem_autoaprovacao(e, solicitante, cc):
+    """Ninguém aprova a própria solicitação: sobe um nível; no topo, vai para o outro diretor (mesma regra do P01)."""
+    if e == solicitante:
+        e = colab[e]["GestorId"] or diretor_cc[cc]
+    if e == solicitante:
+        e = next(d for d in sorted(set(diretor_cc.values()), key=int) if d != solicitante)
+    return e
 
 
 solicitacoes, itens, aprovacoes = [], [], []
@@ -139,7 +147,7 @@ for i in range(n_alvo):
         valor = round(random.uniform(80, 2800), 2)
     seq[tipo] += 1
     codigo = f"{prefixo[tipo]}-2026-{seq[tipo]:06d}"
-    etapas = cadeia(solicitante, cc, valor) if tipo != "Férias" else [colab[solicitante]["GestorId"] or diretor_cc[cc]]
+    etapas = cadeia(solicitante, cc, valor) if tipo != "Férias" else [sem_autoaprovacao(colab[solicitante]["GestorId"] or diretor_cc[cc], solicitante, cc)]
     sla = 4 if urgente else 24
     t = criado
     status = "Aprovado"

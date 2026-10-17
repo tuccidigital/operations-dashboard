@@ -8,7 +8,7 @@ Id;SolicitacaoId;Etapa;AprovadorId;AprovadorNome;Decisao;Canal;DataDecisao;Durac
 7;7;1;2;Marcos Vieira;Aprovado;App;2026-03-18T20:53:55;12.15
 8;8;1;1;Rogério Pacheco;Aprovado;Teams;2026-09-09T23:40:55;13.50
 9;9;1;2;Marcos Vieira;Aprovado;App;2026-09-28T00:42:41;57.76
-10;10;1;1;Rogério Pacheco;Aprovado;Teams;2026-08-22T00:07:53;11.76
+10;10;1;2;Marcos Vieira;Aprovado;Teams;2026-08-22T00:07:53;11.76
 11;11;1;1;Rogério Pacheco;Aprovado;Teams;2026-01-17T02:58:19;9.34
 12;12;1;10;Tatiane Moreira;Aprovado;Teams;2026-03-03T16:32:24;31.36
 13;13;1;1;Rogério Pacheco;Aprovado;Teams;2026-03-05T00:54:57;36.52
@@ -16,7 +16,7 @@ Id;SolicitacaoId;Etapa;AprovadorId;AprovadorNome;Decisao;Canal;DataDecisao;Durac
 15;15;1;3;Caio Ferraz;Aprovado;App;2026-06-19T23:14:16;6.49
 16;16;1;2;Marcos Vieira;Aprovado;Teams;2026-01-07T18:15:16;10.09
 17;17;1;2;Marcos Vieira;Aprovado;Teams;2026-01-24T03:14:12;15.12
-18;18;1;1;Rogério Pacheco;Reprovado;Teams;2026-04-16T21:10:35;53.13
+18;18;1;2;Marcos Vieira;Reprovado;Teams;2026-04-16T21:10:35;53.13
 19;19;1;2;Marcos Vieira;Aprovado;Teams;2026-09-18T20:01:24;7.81
 20;20;1;1;Rogério Pacheco;Aprovado;Teams;2026-03-12T18:00:31;6.38
 21;21;1;2;Marcos Vieira;Aprovado;Teams;2026-02-05T15:30:08;2.20
@@ -46,7 +46,7 @@ Id;SolicitacaoId;Etapa;AprovadorId;AprovadorNome;Decisao;Canal;DataDecisao;Durac
 45;45;1;1;Rogério Pacheco;Aprovado;App;2026-05-22T20:23:40;3.01
 46;46;1;10;Tatiane Moreira;Aprovado;Teams;2026-07-27T18:39:33;4.94
 47;47;1;2;Marcos Vieira;Aprovado;Teams;2026-08-21T18:44:36;4.18
-48;48;1;1;Rogério Pacheco;Reprovado;Teams;2026-09-18T01:15:37;15.56
+48;48;1;2;Marcos Vieira;Reprovado;Teams;2026-09-18T01:15:37;15.56
 49;49;1;1;Rogério Pacheco;Aprovado;Teams;2026-03-16T10:36:42;1.71
 50;50;1;3;Caio Ferraz;Aprovado;Teams;2026-01-08T01:35:51;9.40
 51;51;1;2;Marcos Vieira;Aprovado;App;2026-05-08T06:30:27;37.11
@@ -80,7 +80,7 @@ Id;SolicitacaoId;Etapa;AprovadorId;AprovadorNome;Decisao;Canal;DataDecisao;Durac
 79;79;1;9;Ricardo Nunes;Aprovado;Teams;2026-04-29T14:14:26;20.31
 80;80;1;2;Marcos Vieira;Aprovado;Teams;2026-05-12T14:35:50;5.26
 81;81;1;1;Rogério Pacheco;Aprovado;Teams;2026-05-15T17:43:12;0.85
-82;82;1;1;Rogério Pacheco;Aprovado;Teams;2026-05-10T12:13:36;43.06
+82;82;1;2;Marcos Vieira;Aprovado;Teams;2026-05-10T12:13:36;43.06
 83;83;1;2;Marcos Vieira;Aprovado;Teams;2026-08-26T17:43:41;9.13
 84;84;1;1;Rogério Pacheco;Aprovado;App;2026-05-28T22:21:36;10.03
 85;85;1;1;Rogério Pacheco;Aprovado;App;2026-05-14T17:09:00;1.78
@@ -95,7 +95,7 @@ Id;SolicitacaoId;Etapa;AprovadorId;AprovadorNome;Decisao;Canal;DataDecisao;Durac
 94;93;1;1;Rogério Pacheco;Reprovado;App;2026-09-08T14:59:30;5.96
 95;94;1;3;Caio Ferraz;Aprovado;Teams;2026-06-11T01:09:57;12.82
 96;95;1;1;Rogério Pacheco;Aprovado;Teams;2026-02-18T20:04:25;8.94
-97;96;1;1;Rogério Pacheco;Aprovado;Teams;2026-03-15T07:26:06;42.17
+97;96;1;2;Marcos Vieira;Aprovado;Teams;2026-03-15T07:26:06;42.17
 98;97;1;2;Marcos Vieira;Reprovado;Teams;2026-08-05T21:20:35;36.88
 99;98;1;9;Ricardo Nunes;Aprovado;Teams;2026-09-04T03:25:25;18.39
 100;99;1;2;Marcos Vieira;Aprovado;Teams;2026-05-20T22:47:55;5.77
@@ -184,7 +184,7 @@ Id;SolicitacaoId;Etapa;AprovadorId;AprovadorNome;Decisao;Canal;DataDecisao;Durac
 183;180;1;3;Caio Ferraz;Aprovado;Teams;2026-02-11T11:15:25;18.96
 184;181;1;4;Helena Siqueira;Aprovado;Teams;2026-06-15T10:58:41;1.21
 185;182;1;3;Caio Ferraz;Reprovado;App;2026-09-04T23:10:56;8.27
-186;183;1;1;Rogério Pacheco;Aprovado;App;2026-02-21T01:44:44;12.20
+186;183;1;2;Marcos Vieira;Aprovado;App;2026-02-21T01:44:44;12.20
 187;184;1;3;Caio Ferraz;Aprovado;Teams;2026-01-18T04:27:45;35.56
 188;185;1;5;Juliana Castro;Aprovado;App;2026-03-18T10:04:41;19.41
 189;186;1;2;Marcos Vieira;Aprovado;App;2026-07-23T06:48:19;19.92
@@ -263,7 +263,7 @@ Id;SolicitacaoId;Etapa;AprovadorId;AprovadorNome;Decisao;Canal;DataDecisao;Durac
 262;259;1;2;Marcos Vieira;Aprovado;App;2026-09-22T00:39:48;15.43
 263;260;1;3;Caio Ferraz;Aprovado;Teams;2026-04-14T05:02:25;20.71
 264;261;1;2;Marcos Vieira;Aprovado;App;2026-05-05T14:58:19;3.76
-265;262;1;1;Rogério Pacheco;Aprovado;Teams;2026-01-23T13:33:20;20.21
+265;262;1;2;Marcos Vieira;Aprovado;Teams;2026-01-23T13:33:20;20.21
 266;263;1;3;Caio Ferraz;Aprovado;Teams;2026-07-14T01:38:30;15.06
 267;264;1;4;Helena Siqueira;Aprovado;Teams;2026-09-30T15:15:16;2.84
 268;265;1;9;Ricardo Nunes;Reprovado;Teams;2026-03-12T00:44:35;13.21
@@ -287,13 +287,13 @@ Id;SolicitacaoId;Etapa;AprovadorId;AprovadorNome;Decisao;Canal;DataDecisao;Durac
 286;283;1;3;Caio Ferraz;Aprovado;Teams;2026-01-09T17:40:56;8.25
 287;284;1;1;Rogério Pacheco;Aprovado;Teams;2026-02-11T17:39:38;1.89
 288;285;1;3;Caio Ferraz;Aprovado;Teams;2026-01-09T11:04:27;20.72
-289;286;1;1;Rogério Pacheco;Aprovado;App;2026-09-29T18:44:44;5.93
+289;286;1;2;Marcos Vieira;Aprovado;App;2026-09-29T18:44:44;5.93
 290;287;1;2;Marcos Vieira;Aprovado;Teams;2026-04-25T15:19:04;21.35
 291;288;1;3;Caio Ferraz;Reprovado;App;2026-08-21T02:38:58;38.62
 292;289;1;3;Caio Ferraz;Aprovado;Teams;2026-01-31T08:09:32;14.49
 293;290;1;3;Caio Ferraz;Aprovado;Teams;2026-02-04T20:14:03;56.47
 294;291;1;10;Tatiane Moreira;Aprovado;App;2026-02-20T23:59:06;9.20
-295;292;1;1;Rogério Pacheco;Aprovado;Teams;2026-02-19T04:26:56;14.13
+295;292;1;2;Marcos Vieira;Aprovado;Teams;2026-02-19T04:26:56;14.13
 296;293;1;2;Marcos Vieira;Aprovado;Teams;2026-01-07T20:18:02;8.08
 297;294;1;3;Caio Ferraz;Aprovado;App;2026-01-23T11:08:00;0.62
 298;295;1;3;Caio Ferraz;Aprovado;Teams;2026-09-29T15:18:43;4.31
@@ -301,7 +301,7 @@ Id;SolicitacaoId;Etapa;AprovadorId;AprovadorNome;Decisao;Canal;DataDecisao;Durac
 300;297;1;3;Caio Ferraz;Aprovado;Teams;2026-03-26T03:15:32;16.68
 301;298;1;1;Rogério Pacheco;Aprovado;App;2026-09-16T19:28:34;10.28
 302;299;1;3;Caio Ferraz;Aprovado;App;2026-03-10T12:05:55;1.73
-303;300;1;1;Rogério Pacheco;Aprovado;App;2026-09-24T21:32:44;10.00
+303;300;1;2;Marcos Vieira;Aprovado;App;2026-09-24T21:32:44;10.00
 304;301;1;1;Rogério Pacheco;Aprovado;Teams;2026-03-20T15:17:22;27.32
 305;302;1;1;Rogério Pacheco;Reprovado;Teams;2026-08-15T01:53:59;12.32
 306;303;1;2;Marcos Vieira;Aprovado;Teams;2026-02-13T14:40:25;2.02
@@ -315,7 +315,7 @@ Id;SolicitacaoId;Etapa;AprovadorId;AprovadorNome;Decisao;Canal;DataDecisao;Durac
 314;311;1;2;Marcos Vieira;Aprovado;Teams;2026-08-12T03:55:49;13.51
 315;312;1;3;Caio Ferraz;Aprovado;Teams;2026-02-13T15:53:05;2.52
 316;313;1;4;Helena Siqueira;Aprovado;Teams;2026-08-12T17:30:01;8.75
-317;314;1;1;Rogério Pacheco;Aprovado;Teams;2026-02-24T22:13:28;6.17
+317;314;1;2;Marcos Vieira;Aprovado;Teams;2026-02-24T22:13:28;6.17
 318;315;1;3;Caio Ferraz;Aprovado;App;2026-03-16T20:06:31;6.28
 319;316;1;3;Caio Ferraz;Aprovado;Teams;2026-03-25T15:36:03;6.13
 320;317;1;1;Rogério Pacheco;Aprovado;Teams;2026-03-02T19:31:28;4.02
@@ -342,7 +342,7 @@ Id;SolicitacaoId;Etapa;AprovadorId;AprovadorNome;Decisao;Canal;DataDecisao;Durac
 341;338;1;5;Juliana Castro;Aprovado;Teams;2026-01-28T02:19:19;9.42
 342;339;1;2;Marcos Vieira;Aprovado;Teams;2026-05-09T00:59:55;15.55
 343;340;1;4;Helena Siqueira;Aprovado;Teams;2026-06-29T17:31:19;2.89
-344;341;1;1;Rogério Pacheco;Aprovado;App;2026-09-09T04:43:33;12.51
+344;341;1;2;Marcos Vieira;Aprovado;App;2026-09-09T04:43:33;12.51
 345;342;1;1;Rogério Pacheco;Aprovado;App;2026-06-27T13:04:30;19.33
 346;343;1;3;Caio Ferraz;Reprovado;Teams;2026-07-13T17:11:43;1.50
 347;344;1;3;Caio Ferraz;Aprovado;Teams;2026-09-26T03:22:51;13.75
@@ -361,7 +361,7 @@ Id;SolicitacaoId;Etapa;AprovadorId;AprovadorNome;Decisao;Canal;DataDecisao;Durac
 360;356;1;1;Rogério Pacheco;Aprovado;Teams;2026-05-15T09:44:03;0.68
 361;357;1;3;Caio Ferraz;Reprovado;App;2026-05-08T02:26:14;17.85
 362;358;1;1;Rogério Pacheco;Aprovado;Teams;2026-08-13T03:06:14;12.24
-363;359;1;1;Rogério Pacheco;Aprovado;App;2026-08-01T01:33:27;11.61
+363;359;1;2;Marcos Vieira;Aprovado;App;2026-08-01T01:33:27;11.61
 364;360;1;1;Rogério Pacheco;Aprovado;Teams;2026-01-08T15:50:08;0.69
 365;361;1;2;Marcos Vieira;Aprovado;Teams;2026-01-22T19:06:26;10.44
 366;362;1;2;Marcos Vieira;Aprovado;Teams;2026-08-11T11:54:12;18.64
@@ -372,7 +372,7 @@ Id;SolicitacaoId;Etapa;AprovadorId;AprovadorNome;Decisao;Canal;DataDecisao;Durac
 371;367;1;3;Caio Ferraz;Reprovado;Teams;2026-02-03T23:32:07;10.52
 372;368;1;2;Marcos Vieira;Aprovado;Teams;2026-05-28T18:36:13;3.39
 373;369;1;3;Caio Ferraz;Aprovado;Teams;2026-06-02T23:18:09;14.44
-374;370;1;1;Rogério Pacheco;Aprovado;App;2026-05-13T19:08:16;54.92
+374;370;1;2;Marcos Vieira;Aprovado;App;2026-05-13T19:08:16;54.92
 375;371;1;3;Caio Ferraz;Reprovado;App;2026-03-31T21:23:32;7.24
 376;372;1;2;Marcos Vieira;Aprovado;Teams;2026-08-14T20:35:38;8.46
 377;373;1;9;Ricardo Nunes;Aprovado;Teams;2026-04-09T03:29:05;16.42
@@ -432,7 +432,7 @@ Id;SolicitacaoId;Etapa;AprovadorId;AprovadorNome;Decisao;Canal;DataDecisao;Durac
 431;424;1;2;Marcos Vieira;Aprovado;Teams;2026-04-10T18:38:23;1.54
 432;425;1;4;Helena Siqueira;Aprovado;App;2026-07-02T02:46:01;9.10
 433;426;1;2;Marcos Vieira;Aprovado;Teams;2026-04-15T14:48:22;5.99
-434;427;1;1;Rogério Pacheco;Aprovado;Teams;2026-07-16T16:18:26;3.31
+434;427;1;2;Marcos Vieira;Aprovado;Teams;2026-07-16T16:18:26;3.31
 435;428;1;2;Marcos Vieira;Aprovado;Teams;2026-07-03T17:49:57;4.25
 436;429;1;2;Marcos Vieira;Aprovado;Teams;2026-06-17T21:16:31;12.63
 437;430;1;2;Marcos Vieira;Aprovado;Teams;2026-04-22T17:17:43;0.90
@@ -472,7 +472,7 @@ Id;SolicitacaoId;Etapa;AprovadorId;AprovadorNome;Decisao;Canal;DataDecisao;Durac
 471;464;1;3;Caio Ferraz;Aprovado;Teams;2026-04-06T12:07:34;3.21
 472;465;1;3;Caio Ferraz;Aprovado;Teams;2026-02-25T21:21:34;3.53
 473;466;1;5;Juliana Castro;Aprovado;Teams;2026-08-29T11:05:21;19.49
-474;467;1;1;Rogério Pacheco;Aprovado;Teams;2026-03-25T11:23:35;2.23
+474;467;1;2;Marcos Vieira;Aprovado;Teams;2026-03-25T11:23:35;2.23
 475;468;1;2;Marcos Vieira;Aprovado;Teams;2026-09-02T01:20:16;10.87
 476;469;1;3;Caio Ferraz;Aprovado;Teams;2026-08-21T10:49:11;2.07
 477;470;1;2;Marcos Vieira;Aprovado;Teams;2026-04-03T00:41:23;11.12
@@ -483,9 +483,9 @@ Id;SolicitacaoId;Etapa;AprovadorId;AprovadorNome;Decisao;Canal;DataDecisao;Durac
 482;475;1;3;Caio Ferraz;Aprovado;Teams;2026-05-04T14:55:46;2.58
 483;476;1;5;Juliana Castro;Aprovado;Teams;2026-05-05T03:18:33;18.96
 484;477;1;3;Caio Ferraz;Aprovado;Teams;2026-08-11T02:49:59;14.45
-485;478;1;1;Rogério Pacheco;Aprovado;Teams;2026-02-04T00:51:17;10.67
+485;478;1;2;Marcos Vieira;Aprovado;Teams;2026-02-04T00:51:17;10.67
 486;479;1;3;Caio Ferraz;Aprovado;Teams;2026-02-25T08:03:10;20.75
-487;480;1;1;Rogério Pacheco;Aprovado;App;2026-01-30T02:47:14;17.04
+487;480;1;2;Marcos Vieira;Aprovado;App;2026-01-30T02:47:14;17.04
 488;481;1;9;Ricardo Nunes;Aprovado;App;2026-09-26T00:26:40;9.26
 489;482;1;2;Marcos Vieira;Aprovado;Teams;2026-08-26T01:11:21;9.51
 490;483;1;3;Caio Ferraz;Aprovado;Teams;2026-09-16T19:39:57;10.27
@@ -514,7 +514,7 @@ Id;SolicitacaoId;Etapa;AprovadorId;AprovadorNome;Decisao;Canal;DataDecisao;Durac
 513;506;1;1;Rogério Pacheco;Aprovado;Teams;2026-02-11T06:51:41;16.58
 514;507;1;3;Caio Ferraz;Aprovado;Teams;2026-05-09T06:23:34;13.46
 515;508;1;3;Caio Ferraz;Aprovado;Teams;2026-01-15T12:05:00;42.33
-516;509;1;1;Rogério Pacheco;Aprovado;Teams;2026-04-18T11:50:09;18.67
+516;509;1;2;Marcos Vieira;Aprovado;Teams;2026-04-18T11:50:09;18.67
 517;510;1;3;Caio Ferraz;Aprovado;Teams;2026-03-14T13:57:58;20.78
 518;511;1;4;Helena Siqueira;Aprovado;App;2026-08-25T20:25:44;3.36
 519;512;1;1;Rogério Pacheco;Aprovado;Teams;2026-09-24T18:19:20;6.92
@@ -588,7 +588,7 @@ Id;SolicitacaoId;Etapa;AprovadorId;AprovadorNome;Decisao;Canal;DataDecisao;Durac
 587;580;1;3;Caio Ferraz;Aprovado;Teams;2026-07-02T00:39:34;15.46
 588;581;1;3;Caio Ferraz;Aprovado;Teams;2026-09-29T04:31:57;12.47
 589;582;1;9;Ricardo Nunes;Aprovado;Teams;2026-07-28T13:06:50;20.53
-590;583;1;1;Rogério Pacheco;Aprovado;Teams;2026-09-29T02:38:53;8.81
+590;583;1;2;Marcos Vieira;Aprovado;Teams;2026-09-29T02:38:53;8.81
 591;584;1;2;Marcos Vieira;Aprovado;Teams;2026-04-14T07:04:13;16.70
 592;585;1;9;Ricardo Nunes;Aprovado;App;2026-08-07T09:57:54;20.80
 593;586;1;1;Rogério Pacheco;Aprovado;Teams;2026-03-19T04:06:12;14.37
@@ -603,7 +603,7 @@ Id;SolicitacaoId;Etapa;AprovadorId;AprovadorNome;Decisao;Canal;DataDecisao;Durac
 602;595;1;3;Caio Ferraz;Aprovado;Teams;2026-03-07T05:42:25;18.49
 603;595;2;2;Marcos Vieira;Reprovado;Teams;2026-03-08T01:43:04;20.01
 604;596;1;9;Ricardo Nunes;Aprovado;Teams;2026-02-27T00:35:30;10.13
-605;597;1;1;Rogério Pacheco;Aprovado;Teams;2026-05-22T21:48:16;8.40
+605;597;1;2;Marcos Vieira;Aprovado;Teams;2026-05-22T21:48:16;8.40
 606;598;1;4;Helena Siqueira;Aprovado;Teams;2026-10-01T00:09:17;6.79
 607;599;1;1;Rogério Pacheco;Aprovado;Teams;2026-09-23T16:23:55;49.83
 608;600;1;5;Juliana Castro;Aprovado;Teams;2026-04-02T18:11:23;2.34
@@ -637,7 +637,7 @@ Id;SolicitacaoId;Etapa;AprovadorId;AprovadorNome;Decisao;Canal;DataDecisao;Durac
 636;627;1;1;Rogério Pacheco;Aprovado;App;2026-09-25T16:25:16;2.69
 637;628;1;10;Tatiane Moreira;Aprovado;Teams;2026-05-28T20:10:41;10.26
 638;629;1;1;Rogério Pacheco;Aprovado;Teams;2026-09-03T09:27:48;16.08
-639;630;1;1;Rogério Pacheco;Aprovado;Teams;2026-03-27T15:09:01;1.63
+639;630;1;2;Marcos Vieira;Aprovado;Teams;2026-03-27T15:09:01;1.63
 640;631;1;1;Rogério Pacheco;Aprovado;Teams;2026-07-23T10:39:19;19.82
 641;632;1;5;Juliana Castro;Reprovado;App;2026-09-11T16:12:18;1.86
 642;633;1;1;Rogério Pacheco;Aprovado;Teams;2026-03-13T23:02:10;12.37
